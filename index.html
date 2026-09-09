@@ -178,11 +178,247 @@
   <!-- ─── PRODUCT SECTIONS (injected) ─── -->
   <main id="products" class="relative z-10 bg-black"></main>
 
+  <!-- ═══ TECNOLOGIA · animação de camadas por scroll ═══ -->
+  <section data-screen-label="Tecnologia animada" id="tech-scroll">
+    <div class="tech-sticky">
+      <div class="tech-head">
+        <div>
+
+          <h2 class="tech-title">Você chamaria isso simplesmente de <span class="tech-accent">piso de madeira</span>?
+          </h2>
+        </div>
+        <span class="tech-hint">Continue rolando ↓</span>
+      </div>
+      <div class="tech-body">
+        <!-- palco 3D -->
+        <div class="tech-stage">
+          <div class="tech-stack">
+            <!-- Miolo: quatro lamelas coladas com os veios alternados. -->
+            <div data-plank="0"></div>
+            <div data-plank="1"></div>
+            <div data-plank="2"></div>
+            <div data-plank="3"></div>
+            <!-- Camada nobre: unica lamela com espessura real (4 faces
+                 laterais extrudadas em Z), porque e a parte fisicamente
+                 mais espessa da regua. -->
+            <div data-plank="4">
+              <span class="plank-edge edge-front"></span>
+              <span class="plank-edge edge-back"></span>
+              <span class="plank-edge edge-left"></span>
+              <span class="plank-edge edge-right"></span>
+            </div>
+            <div data-plank="5" style="transform: translateZ(15px);"></div>
+          </div>
+          <div class="tech-plank-shadow" data-plank-shadow></div>
+        </div>
+        <!-- legendas sequenciais -->
+        <div class="tech-labels">
+          <div data-tech-label="0">
+            <div class="tech-label-head"><span class="tech-label-num">01</span>
+              <h3 class="tech-label-name">Camada nobre</h3>
+            </div>
+            <p class="tech-label-text">Madeira tropical brasileira selecionada, responsável pela cor, textura e desenho natural do piso. Recebe acabamento com verniz Bona, garantindo proteção, durabilidade e valorização da madeira.</p>
+          </div>
+          <div data-tech-label="1">
+            <div class="tech-label-head"><span class="tech-label-num">02</span>
+              <h3 class="tech-label-name">Capa de uso</h3>
+            </div>
+            <p class="tech-label-text">Camadas coladas com os veios em direções alternadas: uma trava a outra e
+              neutraliza a expansão e a contração natural da madeira.</p>
+          </div>
+          <div data-tech-label="2">
+            <div class="tech-label-head"><span class="tech-label-num">03</span>
+              <h3 class="tech-label-name">Colagem estrutural</h3>
+            </div>
+            <p class="tech-label-text">Adesivo de alta resistência une as camadas, protege contra a umidade e sustenta a
+              estabilidade do conjunto ao longo do tempo.</p>
+          </div>
+          <div data-tech-label="3">
+            <div class="tech-label-head"><span class="tech-label-num">04</span>
+              <h3 class="tech-label-name">Especificações</h3>
+            </div>
+            <p class="tech-label-text">Réguas multicamadas de 15,08 mm, em larguras de 100, 190 e 300 mm e
+              comprimentos de até 3.000 mm. Acabamento em Verniz UV ou Laca OIL.</p>
+          </div>
+          <div data-tech-label="4">
+            <div class="tech-label-head">
+              <h3 class="tech-label-name">O Resultado</h3>
+            </div>
+            <p class="tech-label-text">100% madeira tropical brasileira, com estabilidade para réguas maiores.
+              Beleza na superfície, engenharia por dentro.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── MADEIRAS · o piso em madeira nobre (régua 3D fechada e girável) ─── -->
+  <section id="madeiras-tipos" data-screen-label="Madeira nobre">
+    <div class="mtipos-inner">
+      <!-- topo: título + intro à esquerda, régua 3D à direita -->
+      <div class="mtipos-top">
+        <div class="mtipos-copy">
+          <header class="mtipos-head fade-up">
+            <span class="mtipos-eyebrow">Sobre as madeiras</span>
+            <h2 class="mtipos-title">O piso em madeira nobre
+              <span class="mtipos-sub">O que está por trás de cada régua</span>
+            </h2>
+          </header>
+
+          <div class="mtipos-intro">
+            <p class="fade-up">Hoje existem diversas formas de executar um piso de madeira, com diferentes
+              espécies, larguras, acabamentos e tecnologias. Por isso, a escolha não deve ser baseada apenas na
+              estética.</p>
+            <p class="fade-up" style="transition-delay:.06s">Além da beleza e da sensação de aconchego que a madeira
+              proporciona, o piso é um elemento técnico da construção. Características como estabilidade
+              dimensional, resistência às variações de umidade, espessura da lâmina e desempenho ao longo do tempo fazem
+              toda a diferença.</p>
+            <p class="mtipos-lead fade-up" style="transition-delay:.12s">Cada régua é selecionada, usinada e instalada
+              sob medida para a obra.</p>
+          </div>
+        </div>
+
+        <!-- régua 3D: peça de piso em madeira nobre, arrastável com o mouse -->
+        <div class="mtipos-3d fade-up">
+          <div class="mtipos-stage" data-floor3d>
+            <div class="mtipos-stack" data-floor3d-stack>
+              <div class="floor-face floor-top"></div>
+              <div class="floor-face floor-bottom"></div>
+              <div class="floor-face floor-edge floor-edge-f"></div>
+              <div class="floor-face floor-edge floor-edge-l"></div>
+              <div class="floor-face floor-edge floor-edge-r"></div>
+              <!-- encaixe macho×fêmea igual à régua: junta no MEIO da espessura,
+                   macho na borda frontal (+Y) e fêmea na borda traseira (-Y), alinhados. -->
+              <!-- MACHO (lingueta): projeta-se À FRENTE da face floor-edge-f, que
+                   continua fechando os ombros -> sem faces coplanares = gira sem z-fighting. -->
+              <div class="floor-face floor-tongue floor-tongue-front"></div>
+              <div class="floor-face floor-tongue floor-tongue-top"></div>
+              <div class="floor-face floor-tongue floor-tongue-bot"></div>
+              <div class="floor-face floor-tongue floor-tongue-cap floor-tongue-cap-l"></div>
+              <div class="floor-face floor-tongue floor-tongue-cap floor-tongue-cap-r"></div>
+              <!-- FÊMEA (rebaixo recuado PARA DENTRO) na borda traseira: dois lábios + interior. -->
+              <div class="floor-face floor-edge floor-groove-lip floor-groove-lip-up"></div>
+              <div class="floor-face floor-edge floor-groove-lip floor-groove-lip-lo"></div>
+              <div class="floor-face floor-groove floor-groove-inner"></div>
+              <div class="floor-face floor-groove floor-groove-floor"></div>
+              <div class="floor-face floor-groove floor-groove-ceil"></div>
+            </div>
+            <div class="mtipos-shadow" data-floor3d-shadow></div>
+          </div>
+          <p class="mtipos-3d-hint">
+            <svg viewBox="0 0 40 12" aria-hidden="true">
+              <path d="M6 6h28M6 6l4-4M6 6l4 4M34 6l-4-4M34 6l-4 4" />
+            </svg>
+            <span>Arraste para girar a régua</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Comparativo: as duas construções de piso em madeira -->
+      <p class="mtipos-lead mtipos-cards-lead fade-up">A principal comparação é entre o piso tradicional
+        e o piso engenheirado.</p>
+
+      <div class="mtipos-cards">
+
+        <!-- Piso Tradicional -->
+        <article class="mtipos-card fade-up">
+
+          <span class="mtipos-badge">Madeira Maciça</span>
+
+          <h3 class="mtipos-card-title">Piso Tradicional</h3>
+
+          <p class="mtipos-intro">
+            Produzido a partir de uma única peça de madeira, preservando toda a
+            autenticidade e a beleza natural da matéria-prima.
+          </p>
+
+          <div class="mtipos-divider"></div>
+
+          <h4>Características</h4>
+
+          <ul class="mtipos-list">
+            <li>Peça única de madeira maciça</li>
+            <li>Visual totalmente natural</li>
+            <li>Movimentação natural da madeira</li>
+            <li>Pode apresentar frestas e empenamentos</li>
+            <li>Mais indicado para ambientes com clima estável</li>
+          </ul>
+
+          <div class="mtipos-footer">
+            <h4>Ideal para</h4>
+            <p>Projetos que valorizam a autenticidade da madeira maciça.</p>
+          </div>
+
+        </article>
+
+        <!-- Piso Engenheirado -->
+        <article class="mtipos-card mtipos-card--eng fade-up" style="transition-delay:.08s">
+
+          <span class="mtipos-badge">Alta Estabilidade</span>
+
+          <h3 class="mtipos-card-title">Piso Engenheirado</h3>
+
+          <p class="mtipos-intro">
+            Estrutura multicamadas desenvolvida para reduzir movimentações naturais,
+            mantendo toda a beleza e a textura da madeira nobre.
+          </p>
+
+          <div class="mtipos-divider"></div>
+
+          <h4>Vantagens</h4>
+
+          <ul class="mtipos-list">
+            <li>100% madeira natural</li>
+            <li>Estrutura multicamadas</li>
+            <li>Maior estabilidade dimensional</li>
+            <li>Resistência às variações climáticas</li>
+            <li>Permite réguas maiores e ambientes sofisticados</li>
+            <li>Excelente desempenho em diferentes instalações</li>
+          </ul>
+
+          <div class="mtipos-footer">
+            <h4>Ideal para</h4>
+            <p>Residências e projetos de alto padrão que exigem máxima estabilidade.</p>
+          </div>
+
+        </article>
+
+      </div>
+
+      <!-- Fecho da seção, em bloco destacado -->
+      <div class="mtipos-fecho fade-up">
+        <p class="mtipos-outro">O resultado é um piso que atravessa o uso diário sem perder a elegância:
+          estável, silencioso e bonito de perto, régua a régua.</p>
+      </div>
+
+      <!-- Bloco final: como a madeira reage -->
+      <div class="mtipos-react">
+        <div class="mtipos-react-head fade-up">
+          <span class="mtipos-eyebrow">Reação da madeira à umidade e à temperatura</span>
+          <h3 class="mtipos-react-title">Como o piso de madeira reage?</h3>
+        </div>
+        <div class="mtipos-react-body">
+          <p class="fade-up">A madeira é um elemento vivo e, como tal, sensível, reagindo constantemente ao ambiente ao
+            seu redor. É especialmente sensível às variações de umidade e, até certo ponto, adapta-se, ajustando-se de
+            forma lenta e quase imperceptível por meio de uma série de movimentos que, ao longo do tempo, alteram suas
+            dimensões.</p>
+          <p class="fade-up" style="transition-delay:.06s">É fácil perceber como essa resposta natural pode representar
+            um desafio quando utilizada em pisos, que cobrem grandes áreas contínuas e estão regularmente sujeitos a
+            variações de temperatura, ao uso intenso e à presença frequente de umidade.</p>
+          <p class="fade-up" style="transition-delay:.12s">Por isso o projeto do piso trabalha com esse
+            comportamento, e não contra ele: a espécie é escolhida conforme o ambiente, as peças são preparadas para o
+            teor de umidade do local e a instalação acomoda o movimento natural da madeira. Bem executado, o piso se
+            estabiliza e segue firme por décadas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- ─── TEXTURAS · réguas que trocam com o scroll ─── -->
-  <!-- ─── TEXTURAS · régua das 25 espécies (oculta: o catálogo geral mostra
-       só as fotos da seleção. Reativar removendo o atributo hidden) ─── -->
-  <section hidden data-screen-label="Texturas" id="texturas" class="texturas-scroll" aria-label="Texturas das espécies">
+  <!-- ─── TEXTURAS · régua das 25 espécies ─── -->
+  <section data-screen-label="Texturas" id="texturas" class="texturas-scroll" aria-label="Texturas das espécies">
     <div class="texturas-stage">
       <div class="texturas-copy">
         <span class="texturas-eyebrow">Texturas</span>
@@ -209,6 +445,168 @@
         </p>
       </div>
       <div class="texturas-trilha" aria-hidden="true"><span id="texturas-trilha-fill"></span></div>
+    </div>
+  </section>
+
+  <!-- ─── LARGURAS — secao propria: texto a esquerda, regua a direita ─── -->
+  <section id="medidas" data-screen-label="Larguras" aria-label="Larguras das réguas">
+    <div class="medidas-inner">
+      <div class="medidas-copy">
+        <span class="medidas-eyebrow">Larguras</span>
+        <h2 class="medidas-title">Cada ambiente pede um tamanho de régua</h2>
+        <p class="medidas-nota">Produzimos réguas de 1 a 3&nbsp;metros de comprimento, em seis larguras — de 10 a 40&nbsp;cm. A escolha acompanha a proporção do ambiente.</p>
+        <ul class="medidas-mini">
+          <li><button type="button" class="medidas-mini-btn" data-idx="0">10 cm</button></li>
+          <li><button type="button" class="medidas-mini-btn" data-idx="1">12,5 cm</button></li>
+          <li><button type="button" class="medidas-mini-btn" data-idx="2">15 cm</button></li>
+          <li><button type="button" class="medidas-mini-btn" data-idx="3">19 cm</button></li>
+          <li><button type="button" class="medidas-mini-btn" data-idx="4">30 cm</button></li>
+          <li><button type="button" class="medidas-mini-btn" data-idx="5">40 cm</button></li>
+        </ul>
+      </div>
+
+      <div class="medidas-carrossel">
+        <div class="medidas-trilho" id="medidas-trilho" tabindex="0" aria-label="Réguas, uma por vez">
+        <div class="medidas-slide">
+        <svg class="medidas-svg" viewBox="0 0 500 244" fill="none" xmlns="http://www.w3.org/2000/svg"
+             role="img" aria-labelledby="med-t0 med-d0">
+          <title id="med-t0">Régua de 10 cm de largura</title>
+          <desc id="med-d0">Régua de 10 cm de largura por 1 a 3 m de comprimento. Todas as réguas da série usam a mesma escala de largura.</desc>
+          <g font-family="Geist, sans-serif">
+            <path d="M470 46H70V80H470V46Z" fill="none" stroke="#111" stroke-width="1.5"/>
+
+            <path d="M44 46V80" fill="none" stroke="#111" stroke-width="1"/>
+            <path d="M44 41L40 51H48L44 41Z" fill="#111"/>
+            <path d="M44 85L40 75H48L44 85Z" fill="#111"/>
+            <text x="23.30" y="63" text-anchor="middle" dominant-baseline="middle"
+                  font-size="13" letter-spacing="2.6" font-variant-numeric="tabular-nums" fill="#111"
+                  transform="rotate(-90 22 63)">10<tspan font-size="10" fill="rgba(0,0,0,0.40)"> cm</tspan></text>
+
+            <path d="M78 102H462" fill="none" stroke="#111" stroke-width="1"/>
+            <path d="M70 102L81 97.5V106.5L70 102Z" fill="#111"/>
+            <path d="M470 102L459 97.5V106.5L470 102Z" fill="#111"/>
+            <text x="271.87" y="124" text-anchor="middle"
+                  font-size="11" letter-spacing="3.74" fill="rgba(0,0,0,0.38)">COMP. 1 A 3 M</text>
+          </g>
+        </svg>
+        </div>
+        <div class="medidas-slide">
+        <svg class="medidas-svg" viewBox="0 0 500 244" fill="none" xmlns="http://www.w3.org/2000/svg"
+             role="img" aria-labelledby="med-t1 med-d1">
+          <title id="med-t1">Régua de 12,5 cm de largura</title>
+          <desc id="med-d1">Régua de 12,5 cm de largura por 1 a 3 m de comprimento. Todas as réguas da série usam a mesma escala de largura.</desc>
+          <g font-family="Geist, sans-serif">
+            <path d="M470 46H70V88.5H470V46Z" fill="none" stroke="#111" stroke-width="1.5"/>
+
+            <path d="M44 46V88.5" fill="none" stroke="#111" stroke-width="1"/>
+            <path d="M44 41L40 51H48L44 41Z" fill="#111"/>
+            <path d="M44 93.5L40 83.5H48L44 93.5Z" fill="#111"/>
+            <text x="23.30" y="67.25" text-anchor="middle" dominant-baseline="middle"
+                  font-size="13" letter-spacing="2.6" font-variant-numeric="tabular-nums" fill="#111"
+                  transform="rotate(-90 22 67.25)">12,5<tspan font-size="10" fill="rgba(0,0,0,0.40)"> cm</tspan></text>
+
+            <path d="M78 110.5H462" fill="none" stroke="#111" stroke-width="1"/>
+            <path d="M70 110.5L81 106V115L70 110.5Z" fill="#111"/>
+            <path d="M470 110.5L459 106V115L470 110.5Z" fill="#111"/>
+            <text x="271.87" y="132.5" text-anchor="middle"
+                  font-size="11" letter-spacing="3.74" fill="rgba(0,0,0,0.38)">COMP. 1 A 3 M</text>
+          </g>
+        </svg>
+        </div>
+        <div class="medidas-slide">
+        <svg class="medidas-svg" viewBox="0 0 500 244" fill="none" xmlns="http://www.w3.org/2000/svg"
+             role="img" aria-labelledby="med-t2 med-d2">
+          <title id="med-t2">Régua de 15 cm de largura</title>
+          <desc id="med-d2">Régua de 15 cm de largura por 1 a 3 m de comprimento. Todas as réguas da série usam a mesma escala de largura.</desc>
+          <g font-family="Geist, sans-serif">
+            <path d="M470 46H70V97H470V46Z" fill="none" stroke="#111" stroke-width="1.5"/>
+
+            <path d="M44 46V97" fill="none" stroke="#111" stroke-width="1"/>
+            <path d="M44 41L40 51H48L44 41Z" fill="#111"/>
+            <path d="M44 102L40 92H48L44 102Z" fill="#111"/>
+            <text x="23.30" y="71.5" text-anchor="middle" dominant-baseline="middle"
+                  font-size="13" letter-spacing="2.6" font-variant-numeric="tabular-nums" fill="#111"
+                  transform="rotate(-90 22 71.5)">15<tspan font-size="10" fill="rgba(0,0,0,0.40)"> cm</tspan></text>
+
+            <path d="M78 119H462" fill="none" stroke="#111" stroke-width="1"/>
+            <path d="M70 119L81 114.5V123.5L70 119Z" fill="#111"/>
+            <path d="M470 119L459 114.5V123.5L470 119Z" fill="#111"/>
+            <text x="271.87" y="141" text-anchor="middle"
+                  font-size="11" letter-spacing="3.74" fill="rgba(0,0,0,0.38)">COMP. 1 A 3 M</text>
+          </g>
+        </svg>
+        </div>
+        <div class="medidas-slide">
+        <svg class="medidas-svg" viewBox="0 0 500 244" fill="none" xmlns="http://www.w3.org/2000/svg"
+             role="img" aria-labelledby="med-t3 med-d3">
+          <title id="med-t3">Régua de 19 cm de largura</title>
+          <desc id="med-d3">Régua de 19 cm de largura por 1 a 3 m de comprimento. Todas as réguas da série usam a mesma escala de largura.</desc>
+          <g font-family="Geist, sans-serif">
+            <path d="M470 46H70V110.6H470V46Z" fill="none" stroke="#111" stroke-width="1.5"/>
+
+            <path d="M44 46V110.6" fill="none" stroke="#111" stroke-width="1"/>
+            <path d="M44 41L40 51H48L44 41Z" fill="#111"/>
+            <path d="M44 115.6L40 105.6H48L44 115.6Z" fill="#111"/>
+            <text x="23.30" y="78.3" text-anchor="middle" dominant-baseline="middle"
+                  font-size="13" letter-spacing="2.6" font-variant-numeric="tabular-nums" fill="#111"
+                  transform="rotate(-90 22 78.3)">19<tspan font-size="10" fill="rgba(0,0,0,0.40)"> cm</tspan></text>
+
+            <path d="M78 132.6H462" fill="none" stroke="#111" stroke-width="1"/>
+            <path d="M70 132.6L81 128.1V137.1L70 132.6Z" fill="#111"/>
+            <path d="M470 132.6L459 128.1V137.1L470 132.6Z" fill="#111"/>
+            <text x="271.87" y="154.6" text-anchor="middle"
+                  font-size="11" letter-spacing="3.74" fill="rgba(0,0,0,0.38)">COMP. 1 A 3 M</text>
+          </g>
+        </svg>
+        </div>
+        <div class="medidas-slide">
+        <svg class="medidas-svg" viewBox="0 0 500 244" fill="none" xmlns="http://www.w3.org/2000/svg"
+             role="img" aria-labelledby="med-t5 med-d5">
+          <title id="med-t5">Régua de 30 cm de largura</title>
+          <desc id="med-d5">Régua de 30 cm de largura por 1 a 3 m de comprimento. Todas as réguas da série usam a mesma escala de largura.</desc>
+          <g font-family="Geist, sans-serif">
+            <path d="M470 46H70V148H470V46Z" fill="none" stroke="#111" stroke-width="1.5"/>
+
+            <path d="M44 46V148" fill="none" stroke="#111" stroke-width="1"/>
+            <path d="M44 41L40 51H48L44 41Z" fill="#111"/>
+            <path d="M44 153L40 143H48L44 153Z" fill="#111"/>
+            <text x="23.30" y="97" text-anchor="middle" dominant-baseline="middle"
+                  font-size="13" letter-spacing="2.6" font-variant-numeric="tabular-nums" fill="#111"
+                  transform="rotate(-90 22 97)">30<tspan font-size="10" fill="rgba(0,0,0,0.40)"> cm</tspan></text>
+
+            <path d="M78 170H462" fill="none" stroke="#111" stroke-width="1"/>
+            <path d="M70 170L81 165.5V174.5L70 170Z" fill="#111"/>
+            <path d="M470 170L459 165.5V174.5L470 170Z" fill="#111"/>
+            <text x="271.87" y="192" text-anchor="middle"
+                  font-size="11" letter-spacing="3.74" fill="rgba(0,0,0,0.38)">COMP. 1 A 3 M</text>
+          </g>
+        </svg>
+        </div>
+        <div class="medidas-slide">
+        <svg class="medidas-svg" viewBox="0 0 500 244" fill="none" xmlns="http://www.w3.org/2000/svg"
+             role="img" aria-labelledby="med-t6 med-d6">
+          <title id="med-t6">Régua de 40 cm de largura</title>
+          <desc id="med-d6">Régua de 40 cm de largura por 1 a 3 m de comprimento. Todas as réguas da série usam a mesma escala de largura.</desc>
+          <g font-family="Geist, sans-serif">
+            <path d="M470 46H70V182H470V46Z" fill="none" stroke="#111" stroke-width="1.5"/>
+
+            <path d="M44 46V182" fill="none" stroke="#111" stroke-width="1"/>
+            <path d="M44 41L40 51H48L44 41Z" fill="#111"/>
+            <path d="M44 187L40 177H48L44 187Z" fill="#111"/>
+            <text x="23.30" y="114" text-anchor="middle" dominant-baseline="middle"
+                  font-size="13" letter-spacing="2.6" font-variant-numeric="tabular-nums" fill="#111"
+                  transform="rotate(-90 22 114)">40<tspan font-size="10" fill="rgba(0,0,0,0.40)"> cm</tspan></text>
+
+            <path d="M78 204H462" fill="none" stroke="#111" stroke-width="1"/>
+            <path d="M70 204L81 199.5V208.5L70 204Z" fill="#111"/>
+            <path d="M470 204L459 199.5V208.5L470 204Z" fill="#111"/>
+            <text x="271.87" y="226" text-anchor="middle"
+                  font-size="11" letter-spacing="3.74" fill="rgba(0,0,0,0.38)">COMP. 1 A 3 M</text>
+          </g>
+        </svg>
+        </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -365,6 +763,7 @@
             <ul>
               <li><a href="#sobre">Sobre a Parket</a></li>
               <li><a href="#products-index">Produtos</a></li>
+              <li><a href="#texturas">Texturas</a></li>
             </ul>
           </div>
 
@@ -377,7 +776,6 @@
               <li><a href="#produto-paineis">Painéis</a></li>
               <li><a href="#produto-escadas">Escadas</a></li>
               <li><a href="#produto-portas">Portas</a></li>
-              <li><a href="#produto-marcenarias">Marcenarias</a></li>
             </ul>
           </div>
         </nav>
