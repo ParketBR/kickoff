@@ -201,8 +201,7 @@
     right: 0;
     top: 0;
     bottom: calc(var(--hp) * 46vh);
-    /* "catálogo geral" é o dobro de "madeira": a 10vw encostava nas duas bordas */
-    font-size: clamp(1.35rem, 8.2vw, 3rem);
+    font-size: clamp(1.5rem, 10vw, 3rem);
   }
 }
 
