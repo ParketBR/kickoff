@@ -1,0 +1,8 @@
+.DS_Store
+
+# Originais do Drive: 75 MB de JPEG que o site não usa — o que entra no ar são
+# as versões webp em geral/, geradas a partir deles.
+img catalogo geral/
+/*.jpg
+/*.jpeg
+/*.JPG

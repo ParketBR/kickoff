@@ -1,0 +1,25 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "catalogo-geral",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        ".claude/serve.js",
+        ".",
+        "--port=5179"
+      ],
+      "port": 5179
+    },
+    {
+      "name": "catalogo-escadas",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        ".claude/serve.js",
+        "/Users/parket/Documents/catalogo atualizado/Catalogo-Escadas-main",
+        "--port=5180"
+      ],
+      "port": 5180
+    }
+  ]
+}
