@@ -204,9 +204,9 @@
                 { src: "https://parket.com.br/wp-content/uploads/2025/10/PRO_DE_BR-07.jpg", name: "Cumaru Oxidado" },
                 // Hotel Fasano Trancoso — fotos locais, na pasta enviada pelo
                 // cliente. Os nomes têm espaço e acento, daí o percent-encoding.
-                { src: "Hotel%20Fasando%20Tranocoso/Hotel-Fasano-Trancoso_Piscina_Cred-Daniel-Pinheiro-1-2.jpeg", name: "Cumaru · Hotel Fasano Trancoso, piscina principal" },
-                { src: "Hotel%20Fasando%20Tranocoso/4526619.jpeg", name: "Cumaru · Hotel Fasano Trancoso, solário sobre o mar" },
-                { src: "Hotel%20Fasando%20Tranocoso/Foto-1-Hotel-Fasano-Trancoso_Wellness-Pool_Cr%C3%A9dito-Daniel-Pinheiro.jpeg", name: "Cumaru · Hotel Fasano Trancoso, wellness pool" }
+                { src: "Hotel%20Fasando%20Tranocoso/Hotel-Fasano-Trancoso_Piscina_Cred-Daniel-Pinheiro-1-2.webp", name: "Cumaru · Hotel Fasano Trancoso, piscina principal" },
+                { src: "Hotel%20Fasando%20Tranocoso/4526619.webp", name: "Cumaru · Hotel Fasano Trancoso, solário sobre o mar" },
+                { src: "Hotel%20Fasando%20Tranocoso/Foto-1-Hotel-Fasano-Trancoso_Wellness-Pool_Cr%C3%A9dito-Daniel-Pinheiro.webp", name: "Cumaru · Hotel Fasano Trancoso, wellness pool" }
               ]
             },
             {
@@ -332,7 +332,7 @@
           desc: 'Perspectiva superior. Detalhes em madeira que elevam o teto a uma obra de arte arquitetônica.',
           cover: 'forros/image.webp',
           videos: [
-            { type: 'mp4', src: 'https://parket.com.br/wp-content/uploads/2026/05/Parket-LaminaCarvalho.mp4', vertical: true, poster: 'forros/video-1-cover.jpg', title: 'Lâmina de Carvalho' },
+            { type: 'mp4', src: 'https://parket.com.br/wp-content/uploads/2026/05/Parket-LaminaCarvalho.mp4', vertical: true, poster: 'forros/video-1-cover.webp', title: 'Lâmina de Carvalho' },
             { type: 'mp4', src: 'https://parket.com.br/wp-content/uploads/2026/05/ApKikoVertical-1.mp4', vertical: true },
             { type: 'mp4', src: 'https://parket.com.br/wp-content/uploads/2026/05/ForroObraFelipe.mp4', vertical: true },
             { type: 'youtube', id: 'ILvIX68_muY', vertical: true, title: 'O detalhe que define o projeto premium é aquele que ninguém vê' },
@@ -1408,7 +1408,6 @@
           ['freijo', 'Freijó', 'De coloração amendoada e desenho discreto, confere sofisticação serena e um acabamento naturalmente elegante.'],
           ['peroba-do-campo', 'Peroba do Campo', 'Tradicional e charmosa, sua coloração variada entre o rosado e o dourado confere autenticidade e beleza natural.'],
           ['cabreuva-dourada', 'Cabreúva Dourada', 'Apresenta brilho natural e cor dourada, com veios elegantes que proporcionam luxo e vitalidade.'],
-          ['kebony', 'Kebony®', 'Madeira de reflorestamento modificada por processo biológico: estabilidade e durabilidade de espécie tropical, com origem certificada.'],
           ['teca', 'Teca', 'De tom castanho-dourado e brilho natural, é sinônimo de nobreza e de uma elegância que envelhece bem.'],
           ['catuaba', 'Catuaba', 'Madeira de cor intensa e veios bem definidos, ideal para quem busca personalidade e impacto estético.'],
           ['peroba-mica', 'Peroba Mica', 'Alaranjada e luminosa, de veios longos e bem marcados, imprime calor e vivacidade ao ambiente.'],

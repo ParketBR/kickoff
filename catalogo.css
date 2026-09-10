@@ -276,7 +276,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: url('autoload/index-bg.jpg') center / cover no-repeat;
+      background: url('autoload/index-bg.webp') center / cover no-repeat;
       opacity: 0.20;
       z-index: -1;
       pointer-events: none;
