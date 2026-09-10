@@ -412,15 +412,14 @@
       const SELECAO = {
         pisos: [
           { src: "geral/pisos/carvalho-mont-blanc.webp", name: "Carvalho Europeu<br>Mont Blanc" },
-          { src: "geral/pisos/casa-larissa-gomes-01.webp" },
           { src: "geral/pisos/carvalho-naturalle.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/pisos/espinha-de-peixe.webp", name: "Espinha de Peixe" },
           { src: "geral/pisos/carvalho-marrone.webp", name: "Carvalho Europeu Marrone" },
           { src: "geral/pisos/ambiente-madeira-escura.webp", name: "Carvalho Europeu Capuccino" },
-          { src: "geral/pisos/chevron-marmore.webp" },
+          { src: "geral/pisos/chevron-marmore.webp", name: "Carvalho Europeu Naturalle Chevron" },
           { src: "geral/pisos/carvalho-naturalle-pkt01.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/pisos/carvalho-capuccino.webp", name: "Carvalho Europeu Capuccino" },
-          { src: "geral/pisos/casa-larissa-gomes-02.webp" },
+          { src: "geral/pisos/casa-larissa-gomes-02.webp", name: "Carvalho Europeu Naturalle" },
         ],
         decks: [
           { src: "geral/decks/deck-brazil.webp", name: "Cumaru" },
@@ -428,16 +427,16 @@
           { src: "geral/decks/deck-varanda.webp" },
         ],
         forros: [
-          { src: "geral/forros/forro-beiral.webp" },
+          { src: "geral/forros/forro-beiral.webp", name: "Forro Ripado Tauari" },
           { src: "geral/forros/forro-pergolado.webp", name: "Cumaru" },
         ],
         paineis: [
-          { src: "geral/paineis/painel-ripado-sala.webp" },
+          { src: "geral/paineis/painel-ripado-sala.webp", name: "Carvalho Europeu Light Brown" },
           { src: "geral/paineis/ripado-cumaru-mk27.webp", name: "Ripado de Cumaru" },
-          { src: "geral/paineis/painel-carvalho.webp" },
+          { src: "geral/paineis/painel-carvalho.webp", name: "Carvalho Europeu Smoke" },
         ],
         escadas: [
-          { src: "geral/escadas/escada-helicoidal.webp" },
+          { src: "geral/escadas/escada-helicoidal.webp", name: "Escada Helicoidal Laminada em Tauari" },
           { src: "geral/escadas/escada-caracol-carvalho.webp", name: "Carvalho Europeu" },
         ],
         portas: [
