@@ -434,8 +434,8 @@
         ],
         forros: [
           { src: "geral/forros/casa-larissa-gomes-02.webp", name: "Carvalho Europeu Naturalle" },
-          { src: "geral/forros/forro-beiral.webp", name: "Forro Ripado Tauari" },
-          { src: "geral/forros/forro-pergolado.webp", name: "Cumaru" },
+          { src: "geral/forros/forro-beiral.webp", name: "Forro Ripado Tauari", focus: '30%' },
+          { src: "geral/forros/forro-pergolado.webp", name: "Cumaru", focus: '30%' },
           { src: "geral/forros/forro-varanda-tauari.webp", name: "Forro Ripado de Tauari" },
           { src: "geral/forros/forro-ripado-cumaru.webp", name: "Cumaru", focus: '30%' },
           { src: "geral/forros/forro-freijo.webp", name: "Freijó" },
