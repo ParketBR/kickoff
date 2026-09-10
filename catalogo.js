@@ -1358,6 +1358,8 @@
         // Todas as espécies do catálogo, ordenadas pela luminância da textura (clara → escura).
         // [arquivo em texturas/, nome da linha, descrição]
         // Ainda de fora, por falta da textura: Peroba Demolição.
+        // Tatajuba e Louro Pardo saíram: têm textura, mas nenhum produto do
+        // catálogo é feito nelas — a régua mostra só o que a Parket vende.
         // Para incluir basta colocar texturas/peroba-demolicao.webp e
         // acrescentar a linha aqui, na posição da sua luminância.
         const ESPECIES = [
@@ -1367,8 +1369,6 @@
           ['carvalho-europeu', 'Carvalho Europeu', 'Nobreza atemporal em tons claros e acetinados, com veios suaves que trazem equilíbrio entre tradição e modernidade.'],
           ['bambu', 'Bambu', 'Fibras finas e paralelas em tom palha, de desenho regular e contemporâneo, com leveza que ilumina o ambiente.'],
           ['freijo', 'Freijó', 'De coloração amendoada e desenho discreto, confere sofisticação serena e um acabamento naturalmente elegante.'],
-          ['tatajuba', 'Tatajuba', 'Amarelo-dourada e luminosa, de veios longos e regulares, mantém o tom vivo mesmo exposta ao tempo.'],
-          ['louro-pardo', 'Louro Pardo', 'De tom bege-acinzentado e desenho sóbrio, envelhece com elegância e pede pouca manutenção.'],
           ['peroba-do-campo', 'Peroba do Campo', 'Tradicional e charmosa, sua coloração variada entre o rosado e o dourado confere autenticidade e beleza natural.'],
           ['cabreuva-dourada', 'Cabreúva Dourada', 'Apresenta brilho natural e cor dourada, com veios elegantes que proporcionam luxo e vitalidade.'],
           ['kebony', 'Kebony®', 'Madeira de reflorestamento modificada por processo biológico: estabilidade e durabilidade de espécie tropical, com origem certificada.'],
