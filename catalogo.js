@@ -16,6 +16,7 @@
             { type: 'youtube', id: 'fHEBXGLVck4', vertical: true, title: 'A presença absoluta do material autêntico' },
             { type: 'youtube', id: 'i4gXTyMsTZo', vertical: true, title: 'Coleção Brazil: o espectro tonal da madeira brasileira' },
             { type: 'youtube', id: 'j6ptdgucfRs', vertical: true, title: 'Brazil' },
+            { type: 'youtube', id: '9HUVFWeCxsQ', vertical: true, title: 'Carvalho Europeu em espinha de peixe · Projeto Loja Carol Bassi' },
            ],
           collections: [
             {
@@ -304,6 +305,9 @@
           title: 'Painéis',
           desc: 'Geometria viva. Revestimentos que trazem ritmo e profundidade às paredes através da marcenaria fina.',
           cover: 'paineis/image.webp',
+          videos: [
+            { type: 'youtube', id: 'Q5sS_v0cNis', vertical: true, title: 'Painel de régua em Canela Demolição na Fazenda Santa Eliza' }
+          ],
           images: [
             { src: "https://parket.com.br/wp-content/uploads/2025/10/PRO_PA-01.jpg", name: "Carvalho Europeu Customizado" },
             { src: "https://parket.com.br/wp-content/uploads/2025/10/PRO_PA-02.jpg", name: "Ripado de Freijó" },
@@ -339,7 +343,8 @@
             { type: 'youtube', id: 'l3ER_9_misQ', vertical: true, title: 'O detalhe que define o projeto premium é aquele que ninguém vê' },
             { type: 'youtube', id: 'a5RUs8M3E-0', vertical: true, title: 'O detalhe que define o projeto premium é aquele que ninguém vê' },
             { type: 'youtube', id: 'pWWP7BRaN5A', vertical: true, title: 'O detalhe que define o projeto premium é aquele que ninguém vê' },
-            { type: 'youtube', id: 'z4GFZJSSNw4', vertical: true, title: 'O detalhe que define o projeto premium é aquele que ninguém vê' }
+            { type: 'youtube', id: 'z4GFZJSSNw4', vertical: true, title: 'O detalhe que define o projeto premium é aquele que ninguém vê' },
+            { type: 'youtube', id: 'UucHvujgYM0', vertical: true, title: 'Forro ripado em beiral com ângulos na Fazenda Boa Vista' }
           ],
           images: [
             { src: "https://parket.com.br/wp-content/uploads/2025/10/PRO_FO-01.jpg", name: "Carvalho Europeu" },
@@ -371,6 +376,9 @@
           title: 'Marcenarias',
           desc: 'A madeira que organiza a casa. Armários, painéis, cabeceiras e estantes desenhados sob medida, com o mesmo rigor de acabamento das superfícies.',
           cover: 'https://images.weserv.nl/?url=parket.com.br%2Fwp-content%2Fuploads%2F2025%2F10%2FPRO_MA-14.jpg&output=webp&q=80&w=2000',
+          videos: [
+            { type: 'youtube', id: 's_nafoR1yec', vertical: true }
+          ],
           images: [
             { src: "https://parket.com.br/wp-content/uploads/2025/10/PRO_MA-01.jpg" },
             { src: "https://parket.com.br/wp-content/uploads/2025/10/PRO_MA-02.jpg" },
@@ -421,18 +429,25 @@
         decks: [
           { src: "geral/decks/deck-brazil.webp", name: "Cumaru" },
           { src: "geral/decks/deck-cumaru-mk27.webp", name: "Cumaru" },
-          { src: "geral/decks/deck-varanda.webp", name: "Forro Ripado de Tauari" },
+          { src: "geral/decks/deck-fasano-solario.webp", name: "Cumaru · Hotel Fasano Trancoso" },
+          { src: "geral/decks/deck-ipe-oxidado.webp", name: "Ipê Oxidado" },
         ],
         forros: [
           { src: "geral/forros/casa-larissa-gomes-02.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/forros/forro-beiral.webp", name: "Forro Ripado Tauari" },
           { src: "geral/forros/forro-pergolado.webp", name: "Cumaru" },
+          { src: "geral/forros/forro-varanda-tauari.webp", name: "Forro Ripado de Tauari" },
+          { src: "geral/forros/forro-ripado-cumaru.webp", name: "Cumaru", focus: '30%' },
+          { src: "geral/forros/forro-freijo.webp", name: "Freijó" },
+          { src: "geral/forros/forro-cumaru-02.webp", name: "Cumaru" },
         ],
         paineis: [
-          { src: "geral/paineis/carvalho-naturalle.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/paineis/painel-ripado-sala.webp", name: "Carvalho Europeu Light Brown" },
           { src: "geral/paineis/ripado-cumaru-mk27.webp", name: "Ripado de Cumaru" },
-          { src: "geral/paineis/painel-carvalho.webp", name: "Carvalho Europeu Smoke" },
+          { src: "geral/paineis/painel-ripado-cumaru-01.webp", name: "Cumaru" },
+          { src: "geral/paineis/painel-freijo.webp", name: "Freijó" },
+          { src: "geral/paineis/painel-carvalho-customizado.webp", name: "Carvalho Europeu Customizado" },
+          { src: "geral/paineis/painel-shou-sugi-ban-freijo.webp", name: "Shou Sugi Ban + Freijó" },
         ],
         escadas: [
           { src: "geral/escadas/escada-helicoidal.webp", name: "Escada Helicoidal Laminada em Tauari" },
@@ -440,6 +455,10 @@
         ],
         portas: [
           { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Capuccino" },
+          { src: "geral/portas/porta-pivotante-frisada-cumaru.webp", name: "Porta Pivotante Frisada em Cumaru Maciço" },
+          { src: "geral/portas/porta-muxarabi-cumaru.webp", name: "Muxarabi de Cumaru Premium" },
+          { src: "geral/portas/porta-carvalho-triplas.webp", name: "Carvalho Europeu", pair: true },
+          { src: "geral/portas/porta-freijo-pivotante.webp", name: "Freijó" },
         ],
       };
 
@@ -1058,6 +1077,9 @@
         'Parket-LaminaCarvalho',  // forros · lâmina de carvalho (mp4)
         's31ibiYfs_E',            // forros · beiral
         'J82KxeHE1Yg',            // escadas
+        '9HUVFWeCxsQ',            // pisos · espinha de peixe na Loja Carol Bassi
+        'ApKikoVertical-1',       // forros · apartamento Kiko (mp4)
+        'Q5sS_v0cNis',            // painéis · régua canela demolição, Fazenda Santa Eliza
       ];
       // Vídeos que não pertencem a nenhuma categoria de ALL_PRODUCTS — entram
       // direto no carrossel do geral, no fim da seleção.

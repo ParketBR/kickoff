@@ -253,80 +253,15 @@
     </div>
   </section>
 
-  <!-- ─── MADEIRAS · o piso em madeira nobre (régua 3D fechada e girável) ─── -->
+  <!-- ─── MADEIRAS · tradicional × engenheirado + reação à umidade ─── -->
   <section id="madeiras-tipos" data-screen-label="Madeira nobre">
     <div class="mtipos-inner">
-      <!-- topo: título + intro à esquerda, régua 3D à direita -->
-      <div class="mtipos-top">
-        <div class="mtipos-copy">
-          <header class="mtipos-head fade-up">
-            <span class="mtipos-eyebrow">Sobre as madeiras</span>
-            <h2 class="mtipos-title">O piso em madeira nobre
-              <span class="mtipos-sub">O que está por trás de cada régua</span>
-            </h2>
-          </header>
-
-          <div class="mtipos-intro">
-            <p class="fade-up">Hoje existem diversas formas de executar um piso de madeira, com diferentes
-              espécies, larguras, acabamentos e tecnologias. Por isso, a escolha não deve ser baseada apenas na
-              estética.</p>
-            <p class="fade-up" style="transition-delay:.06s">Além da beleza e da sensação de aconchego que a madeira
-              proporciona, o piso é um elemento técnico da construção. Características como estabilidade
-              dimensional, resistência às variações de umidade, espessura da lâmina e desempenho ao longo do tempo fazem
-              toda a diferença.</p>
-            <p class="mtipos-lead fade-up" style="transition-delay:.12s">Cada régua é selecionada, usinada e instalada
-              sob medida para a obra.</p>
-          </div>
-        </div>
-
-        <!-- régua 3D: peça de piso em madeira nobre, arrastável com o mouse -->
-        <div class="mtipos-3d fade-up">
-          <div class="mtipos-stage" data-floor3d>
-            <div class="mtipos-stack" data-floor3d-stack>
-              <div class="floor-face floor-top"></div>
-              <div class="floor-face floor-bottom"></div>
-              <div class="floor-face floor-edge floor-edge-f"></div>
-              <div class="floor-face floor-edge floor-edge-l"></div>
-              <div class="floor-face floor-edge floor-edge-r"></div>
-              <!-- encaixe macho×fêmea igual à régua: junta no MEIO da espessura,
-                   macho na borda frontal (+Y) e fêmea na borda traseira (-Y), alinhados. -->
-              <!-- MACHO (lingueta): projeta-se À FRENTE da face floor-edge-f, que
-                   continua fechando os ombros -> sem faces coplanares = gira sem z-fighting. -->
-              <div class="floor-face floor-tongue floor-tongue-front"></div>
-              <div class="floor-face floor-tongue floor-tongue-top"></div>
-              <div class="floor-face floor-tongue floor-tongue-bot"></div>
-              <div class="floor-face floor-tongue floor-tongue-cap floor-tongue-cap-l"></div>
-              <div class="floor-face floor-tongue floor-tongue-cap floor-tongue-cap-r"></div>
-              <!-- FÊMEA (rebaixo recuado PARA DENTRO) na borda traseira: dois lábios + interior. -->
-              <div class="floor-face floor-edge floor-groove-lip floor-groove-lip-up"></div>
-              <div class="floor-face floor-edge floor-groove-lip floor-groove-lip-lo"></div>
-              <div class="floor-face floor-groove floor-groove-inner"></div>
-              <div class="floor-face floor-groove floor-groove-floor"></div>
-              <div class="floor-face floor-groove floor-groove-ceil"></div>
-            </div>
-            <div class="mtipos-shadow" data-floor3d-shadow></div>
-          </div>
-          <p class="mtipos-3d-hint">
-            <svg viewBox="0 0 40 12" aria-hidden="true">
-              <path d="M6 6h28M6 6l4-4M6 6l4 4M34 6l-4-4M34 6l-4 4" />
-            </svg>
-            <span>Arraste para girar a régua</span>
-          </p>
-        </div>
-      </div>
-
-      <!-- Comparativo: as duas construções de piso em madeira -->
-      <p class="mtipos-lead mtipos-cards-lead fade-up">A principal comparação é entre o piso tradicional
-        e o piso engenheirado.</p>
-
       <div class="mtipos-cards">
 
-        <!-- Piso Tradicional -->
+        <!-- Piso Maciço -->
         <article class="mtipos-card fade-up">
 
-          <span class="mtipos-badge">Madeira Maciça</span>
-
-          <h3 class="mtipos-card-title">Piso Tradicional</h3>
+          <h3 class="mtipos-card-title">Piso Maciço</h3>
 
           <p class="mtipos-intro">
             Produzido a partir de uma única peça de madeira, preservando toda a
@@ -354,8 +289,6 @@
 
         <!-- Piso Engenheirado -->
         <article class="mtipos-card mtipos-card--eng fade-up" style="transition-delay:.08s">
-
-          <span class="mtipos-badge">Alta Estabilidade</span>
 
           <h3 class="mtipos-card-title">Piso Engenheirado</h3>
 

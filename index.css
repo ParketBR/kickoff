@@ -1537,14 +1537,6 @@
 }
 
 /* Cartões comparativos */
-/* Lead que introduz o comparativo */
-#madeiras-tipos .mtipos-cards-lead {
-  max-width: 44rem;
-  margin: clamp(3rem, 5vw, 4.5rem) 0 0;
-  font-size: var(--text-body);
-  line-height: 1.75;
-}
-
 #madeiras-tipos .mtipos-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
