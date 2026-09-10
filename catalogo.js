@@ -412,25 +412,24 @@
       const SELECAO = {
         pisos: [
           { src: "geral/pisos/carvalho-mont-blanc.webp", name: "Carvalho Europeu<br>Mont Blanc" },
-          { src: "geral/pisos/carvalho-naturalle.webp", name: "Carvalho Europeu Naturalle" },
-          { src: "geral/pisos/espinha-de-peixe.webp", name: "Espinha de Peixe" },
-          { src: "geral/pisos/carvalho-marrone.webp", name: "Carvalho Europeu Marrone" },
-          { src: "geral/pisos/ambiente-madeira-escura.webp", name: "Carvalho Europeu Capuccino" },
+          { src: "geral/pisos/espinha-de-peixe.webp", name: "Espinha de Peixe", pair: true },
           { src: "geral/pisos/chevron-marmore.webp", name: "Carvalho Europeu Naturalle Chevron" },
+          { src: "geral/pisos/ambiente-madeira-escura.webp", name: "Carvalho Europeu Capuccino" },
           { src: "geral/pisos/carvalho-naturalle-pkt01.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/pisos/carvalho-capuccino.webp", name: "Carvalho Europeu Capuccino" },
-          { src: "geral/pisos/casa-larissa-gomes-02.webp", name: "Carvalho Europeu Naturalle" },
         ],
         decks: [
           { src: "geral/decks/deck-brazil.webp", name: "Cumaru" },
           { src: "geral/decks/deck-cumaru-mk27.webp", name: "Cumaru" },
-          { src: "geral/decks/deck-varanda.webp" },
+          { src: "geral/decks/deck-varanda.webp", name: "Forro Ripado de Tauari" },
         ],
         forros: [
+          { src: "geral/forros/casa-larissa-gomes-02.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/forros/forro-beiral.webp", name: "Forro Ripado Tauari" },
           { src: "geral/forros/forro-pergolado.webp", name: "Cumaru" },
         ],
         paineis: [
+          { src: "geral/paineis/carvalho-naturalle.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/paineis/painel-ripado-sala.webp", name: "Carvalho Europeu Light Brown" },
           { src: "geral/paineis/ripado-cumaru-mk27.webp", name: "Ripado de Cumaru" },
           { src: "geral/paineis/painel-carvalho.webp", name: "Carvalho Europeu Smoke" },
@@ -451,7 +450,7 @@
       // Capa de cada categoria: também sai da seleção — o geral não usa mais
       // nenhuma imagem fora de geral/.
       const CAPAS = {
-        pisos: 'geral/pisos/casa-larissa-gomes-02.webp',
+        pisos: 'geral/pisos/carvalho-mont-blanc.webp',
         decks: 'geral/decks/deck-cumaru-mk27.webp',
         forros: 'geral/forros/forro-beiral.webp',
         paineis: 'geral/paineis/painel-ripado-sala.webp',
@@ -582,12 +581,11 @@
           });
         }, { threshold: 0.25 });
 
-        photos.forEach((img, i) => {
+        // Miolo de uma foto (camadas + legenda). Reaproveitado tanto na foto
+        // sozinha quanto nas duplas que dividem a tela.
+        function photoInner(img, i, sizes) {
           const caption = img.name || names[i + 1];
           const num = String(i + 1).padStart(2, '0');
-          const item = document.createElement('figure');
-          item.className = 'photo-stream-item';
-          if (idPrefix) item.id = `foto-${idPrefix}-${i}`;
           const label = caption ? `<span class="photo-num-inline">${num}</span> ${caption}` : `<span class="photo-num-inline">${num}</span>`;
           const styleParts = [];
           if (img.focus) styleParts.push(`object-position: center ${img.focus}`);
@@ -597,7 +595,7 @@
           // Imagens remotas ganham srcset (mobile baixa versão menor via proxy)
           const isRemote = img.src.includes('parket.com.br');
           const srcsetAttr = isRemote
-            ? ` srcset="${proxify(img.src, 800)} 800w, ${proxify(img.src, 1200)} 1200w, ${proxify(img.src, 1600)} 1600w" sizes="100vw"`
+            ? ` srcset="${proxify(img.src, 800)} 800w, ${proxify(img.src, 1200)} 1200w, ${proxify(img.src, 1600)} 1600w" sizes="${sizes}"`
             : '';
           // First photo of each stream loads eagerly with high priority
           const loadingAttr = i === 0 ? 'eager' : 'lazy';
@@ -607,14 +605,32 @@
           const blurLayer = img.fit === 'contain'
             ? `<img class="photo-blur-bg" aria-hidden="true" decoding="async" loading="${loadingAttr}" src="${proxiedSrc}" alt="">`
             : '';
-          item.innerHTML = `
+          return `
             ${blurLayer}
             <img decoding="async" loading="${loadingAttr}"${priorityAttr} src="${proxiedSrc}"${srcsetAttr} alt="${caption || title + ' ' + (i + 1)}"${focusStyle}>
             <figcaption class="photo-stream-caption">${label}</figcaption>
           `;
+        }
+
+        for (let i = 0; i < photos.length; i++) {
+          const img = photos[i];
+          // `pair: true` cola esta foto na seguinte: as duas dividem uma tela.
+          const twin = img.pair && photos[i + 1] ? photos[i + 1] : null;
+          const item = document.createElement('figure');
+          item.className = twin ? 'photo-stream-item photo-stream-duo' : 'photo-stream-item';
+          if (idPrefix) item.id = `foto-${idPrefix}-${i}`;
+          if (twin) {
+            item.innerHTML = `
+              <div class="photo-duo-cell">${photoInner(img, i, '50vw')}</div>
+              <div class="photo-duo-cell">${photoInner(twin, i + 1, '50vw')}</div>
+            `;
+            i++;
+          } else {
+            item.innerHTML = photoInner(img, i, '100vw');
+          }
           container.appendChild(item);
           inViewIo.observe(item);
-        });
+        }
       }
 
       // ─── VIDEO BLOCK ─────────────────────────────────────────────
