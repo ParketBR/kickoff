@@ -420,8 +420,6 @@
       const SELECAO = {
         pisos: [
           { src: "geral/pisos/carvalho-mont-blanc.webp", name: "Carvalho Europeu<br>Mont Blanc" },
-          { src: "geral/pisos/espinha-de-peixe.webp", name: "Espinha de Peixe", pair: true },
-          { src: "geral/pisos/chevron-marmore.webp", name: "Carvalho Europeu Naturalle Chevron" },
           { src: "geral/pisos/ambiente-madeira-escura.webp", name: "Carvalho Europeu Capuccino" },
           { src: "geral/pisos/carvalho-naturalle-pkt01.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/pisos/carvalho-capuccino.webp", name: "Carvalho Europeu Capuccino" },
