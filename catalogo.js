@@ -450,7 +450,7 @@
           { src: "geral/escadas/escada-helicoidal.webp", name: "Carvalho Europeu Naturalle" },
         ],
         portas: [
-          { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Capuccino" },
+          { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Smoked" },
           { src: "geral/portas/porta-pivotante-frisada-cumaru.webp", name: "Porta Pivotante Frisada em Cumaru Maciço" },
           { src: "geral/portas/porta-muxarabi-cumaru.webp", name: "Muxarabi de Cumaru Premium" },
           { src: "geral/portas/porta-carvalho-triplas.webp", name: "Carvalho Europeu", pair: true },
