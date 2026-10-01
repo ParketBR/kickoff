@@ -444,7 +444,7 @@
           { src: "geral/forros/forro-sala-jantar-estante.webp", name: "Peroba de Demolição", focus: '18%' },
           { src: "geral/forros/forro-varanda-tauari.webp", name: "Tauari" },
           { src: "geral/forros/forro-freijo.webp", name: "Freijó" },
-          { src: "geral/forros/forro-sala-jardim.webp", name: "Louro Pardo" },
+          { src: "geral/forros/forro-sala-jardim.webp", name: "Loro Pardo" },
         ],
         paineis: [
           { src: "geral/paineis/ripado-cumaru-mk27.webp", name: "Cumaru" },
