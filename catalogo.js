@@ -443,7 +443,8 @@
           { src: "geral/forros/forro-varanda-tauari.webp", name: "Tauari" },
           { src: "geral/forros/forro-freijo.webp", name: "Freijó" },
           { src: "geral/forros/forro-sala-jardim.webp", name: "Cumaru" },
-          { src: "geral/forros/forro-sala-jantar-estante.webp", name: "Cumaru" },
+          { src: "geral/forros/forro-sala-jantar-estante.webp", name: "Cumaru", pair: true },
+          { src: "geral/escadas/escada-caracol-carvalho-revestida.webp", name: "Carvalho Europeu Naturalle" },
         ],
         paineis: [
           { src: "geral/paineis/painel-ripado-sala.webp", name: "Carvalho Europeu Naturalle" },
@@ -456,7 +457,6 @@
         escadas: [
           { src: "geral/escadas/escada-flutuante-carvalho.webp", name: "Carvalho Europeu", pair: true },
           { src: "geral/pisos/loja-versalles.webp", name: "Carvalho Europeu Naturalle" },
-          { src: "geral/escadas/escada-caracol-carvalho-revestida.webp", name: "Carvalho Europeu Naturalle" },
         ],
         portas: [
           { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Smoked", pair: true },
