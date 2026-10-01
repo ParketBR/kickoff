@@ -447,7 +447,7 @@
           { src: "geral/paineis/painel-shou-sugi-ban-freijo.webp", name: "Shou Sugi Ban + Freijó" },
         ],
         escadas: [
-          { src: "geral/escadas/escada-helicoidal.webp", name: "Escada Helicoidal Laminada em Tauari" },
+          { src: "geral/escadas/escada-helicoidal.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/escadas/escada-caracol-carvalho.webp", name: "Carvalho Europeu" },
         ],
         portas: [
