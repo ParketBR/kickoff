@@ -427,7 +427,7 @@
         decks: [
           { src: "geral/decks/deck-brazil.webp", name: "Cumaru" },
           { src: "geral/decks/deck-cumaru-mk27.webp", name: "Cumaru" },
-          { src: "geral/decks/deck-fasano-solario.webp", name: "Cumaru · Hotel Fasano Trancoso" },
+          { src: "geral/decks/deck-fasano-solario.webp", name: "Cumaru" },
           { src: "geral/decks/deck-ipe-oxidado.webp", name: "Ipê Oxidado" },
         ],
         forros: [
