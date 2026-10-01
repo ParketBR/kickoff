@@ -458,7 +458,7 @@
         portas: [
           { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Smoked" },
           { src: "geral/portas/porta-pivotante-frisada-cumaru.webp", name: "Cumaru" },
-          { src: "geral/portas/porta-pivotante-carvalho-nicho.webp", name: "Carvalho Europeu Naturalle" },
+          { src: "geral/portas/porta-pivotante-carvalho-nicho.webp", name: "Carvalho Europeu Naturalle", fit: 'contain' },
         ],
       };
 
@@ -608,7 +608,7 @@
           const label = caption ? `<span class="photo-num-inline">${num}</span> ${caption}` : `<span class="photo-num-inline">${num}</span>`;
           const styleParts = [];
           if (img.focus) styleParts.push(`object-position: center ${img.focus}`);
-          if (img.fit) styleParts.push(`object-fit: ${img.fit}`);
+          const fitClass = img.fit ? ` class="photo-fit-${img.fit}"` : '';
           const focusStyle = styleParts.length ? ` style="${styleParts.join('; ')};"` : '';
           const proxiedSrc = proxify(img.src, 1600);
           // Imagens remotas ganham srcset (mobile baixa versão menor via proxy)
@@ -626,7 +626,7 @@
             : '';
           return `
             ${blurLayer}
-            <img decoding="async" loading="${loadingAttr}"${priorityAttr} src="${proxiedSrc}"${srcsetAttr} alt="${caption || title + ' ' + (i + 1)}"${focusStyle}>
+            <img${fitClass} decoding="async" loading="${loadingAttr}"${priorityAttr} src="${proxiedSrc}"${srcsetAttr} alt="${caption || title + ' ' + (i + 1)}"${focusStyle}>
             <figcaption class="photo-stream-caption">${label}</figcaption>
           `;
         }
