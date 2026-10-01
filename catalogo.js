@@ -915,7 +915,10 @@
       function buildSimpleProduct(product) {
         // Product cover + photo stream (no nested collections)
         const wrap = document.createElement('div');
-        wrap.appendChild(buildProductCover(product));
+        // No catálogo geral a capa da categoria não existe: o stream começa direto
+        // e o id fica no wrapper para o índice lateral e as âncoras do rodapé.
+        if (SINGLE_CATEGORY) wrap.appendChild(buildProductCover(product));
+        else wrap.id = `produto-${product.key}`;
 
         const stream = document.createElement('div');
         stream.className = 'photo-stream';
@@ -932,7 +935,7 @@
 
       // ─── BUILD PRODUCTS NAV ──────────────────────────────────────
       const productsNav = document.getElementById('products-nav');
-      PRODUCTS.forEach((p, i) => {
+      if (productsNav) PRODUCTS.forEach((p, i) => {
         const a = document.createElement('a');
         a.className = 'index-link';
         a.href = `#produto-${p.key}`;
