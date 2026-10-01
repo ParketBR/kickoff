@@ -428,7 +428,6 @@
           { src: "geral/pisos/chevron-sala-jantar.webp", name: "Carvalho Europeu Milano", pair: true },
           { src: "geral/pisos/espinha-sala-branca.webp", name: "Carvalho Europeu Smoked" },
           { src: "geral/pisos/galeria-tabuas-largas.webp", name: "Carvalho Europeu Naturalle" },
-          { src: "geral/pisos/loja-versalles.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/pisos/cozinha-carvalho-marrone.webp", name: "Carvalho Europeu Marrone" },
         ],
         decks: [
@@ -453,7 +452,8 @@
           { src: "geral/paineis/painel-shou-sugi-ban-freijo.webp", name: "Shou Sugi Ban + Freijó" },
         ],
         escadas: [
-          { src: "geral/escadas/escada-flutuante-carvalho.webp", name: "Carvalho Europeu" },
+          { src: "geral/escadas/escada-flutuante-carvalho.webp", name: "Carvalho Europeu", pair: true },
+          { src: "geral/pisos/loja-versalles.webp", name: "Carvalho Europeu Naturalle" },
         ],
         portas: [
           { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Smoked" },
