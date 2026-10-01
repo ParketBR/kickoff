@@ -24,8 +24,8 @@
     const runway = vp.offsetHeight - vh;                 // distância de pin (px)
     if (runway <= 0){ sticky.style.setProperty('--hp','0'); return; }
     const scrolled = Math.max(0, -vp.getBoundingClientRect().top);
-    /* completa a transição em ~80% do runway e segura o restante */
-    const p = Math.min(scrolled / (runway * 0.8), 1);
+    /* completa a transição em ~70% do runway e segura só um instante antes de soltar */
+    const p = Math.min(scrolled / (runway * 0.7), 1);
     sticky.style.setProperty('--hp', p.toFixed(4));
   }
   const onScroll = () => { if (!ticking){ requestAnimationFrame(update); ticking = true; } };
