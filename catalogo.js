@@ -444,14 +444,13 @@
           { src: "geral/forros/forro-sala-jantar-estante.webp", name: "Peroba de Demolição", focus: '18%' },
           { src: "geral/forros/forro-varanda-tauari.webp", name: "Tauari" },
           { src: "geral/forros/forro-freijo.webp", name: "Freijó" },
-          { src: "geral/forros/forro-sala-jardim.webp", name: "Louro Pardo" },
+          { src: "geral/forros/forro-sala-jardim.webp", name: "Loro Pardo" },
         ],
         paineis: [
-          { src: "geral/paineis/painel-ripado-sala.webp", name: "Carvalho Europeu Naturalle" },
-          { src: "geral/paineis/ripado-cumaru-mk27.webp", name: "Ripado de Cumaru" },
+          { src: "geral/paineis/ripado-cumaru-mk27.webp", name: "Cumaru" },
         ],
         escadas: [
-          { src: "geral/escadas/escada-flutuante-carvalho.webp", name: "Carvalho Europeu", pair: true },
+          { src: "geral/escadas/escada-flutuante-carvalho.webp", name: "Carvalho Europeu Marrone", pair: true },
           { src: "geral/escadas/escada-caracol-carvalho-revestida.webp", name: "Carvalho Europeu Smoked" },
         ],
         portas: [
@@ -473,7 +472,7 @@
         pisos: 'geral/pisos/sala-bege-coluna.webp',
         decks: 'geral/decks/deck-cumaru-mk27.webp',
         forros: 'geral/forros/forro-beiral.webp',
-        paineis: 'geral/paineis/painel-ripado-sala.webp',
+        paineis: 'geral/paineis/ripado-cumaru-mk27.webp',
         escadas: 'geral/escadas/escada-flutuante-carvalho.webp',
         portas: 'geral/portas/porta-pivotante-madeira.webp',
       };
