@@ -419,7 +419,8 @@
       // renderizam; nesta página ele só não é usado.
       const SELECAO = {
         pisos: [
-          { src: "geral/pisos/carvalho-mont-blanc.webp", name: "Carvalho Europeu<br>Mont Blanc" },
+          { src: "geral/pisos/sala-bege-coluna.webp", name: "Carvalho Europeu Naturalle", pair: true },
+          { src: "geral/pisos/sala-poltronas-laranja.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/pisos/ambiente-madeira-escura.webp", name: "Carvalho Europeu Capuccino" },
           { src: "geral/pisos/carvalho-naturalle-pkt01.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/pisos/carvalho-capuccino.webp", name: "Carvalho Europeu Capuccino" },
@@ -427,8 +428,6 @@
           { src: "geral/pisos/canela-demolicao.webp", name: "Canela de Demolição" },
           { src: "geral/pisos/chevron-sala-jantar.webp", name: "Carvalho Europeu Milano", pair: true },
           { src: "geral/pisos/espinha-sala-branca.webp", name: "Carvalho Europeu Smoked" },
-          { src: "geral/pisos/sala-bege-coluna.webp", name: "Carvalho Europeu Naturalle", pair: true },
-          { src: "geral/pisos/sala-poltronas-laranja.webp", name: "Carvalho Europeu Naturalle" },
         ],
         decks: [
           { src: "geral/decks/deck-brazil.webp", name: "Cumaru" },
@@ -441,7 +440,6 @@
           { src: "geral/forros/forro-beiral.webp", name: "Forro Ripado Tauari", focus: '30%' },
           { src: "geral/forros/forro-pergolado.webp", name: "Cumaru", focus: '30%' },
           { src: "geral/forros/forro-varanda-tauari.webp", name: "Forro Ripado de Tauari" },
-          { src: "geral/forros/forro-ripado-cumaru.webp", name: "Cumaru", focus: '30%' },
           { src: "geral/forros/forro-freijo.webp", name: "Freijó" },
           { src: "geral/forros/forro-cumaru-02.webp", name: "Cumaru" },
           { src: "geral/forros/forro-sala-jardim.webp", name: "Cumaru" },
@@ -469,7 +467,7 @@
       // Capa de cada categoria: também sai da seleção — o geral não usa mais
       // nenhuma imagem fora de geral/.
       const CAPAS = {
-        pisos: 'geral/pisos/carvalho-mont-blanc.webp',
+        pisos: 'geral/pisos/sala-bege-coluna.webp',
         decks: 'geral/decks/deck-cumaru-mk27.webp',
         forros: 'geral/forros/forro-beiral.webp',
         paineis: 'geral/paineis/painel-ripado-sala.webp',
