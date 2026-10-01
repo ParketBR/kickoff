@@ -427,6 +427,8 @@
           { src: "geral/pisos/canela-demolicao.webp", name: "Canela de Demolição" },
           { src: "geral/pisos/chevron-sala-jantar.webp", name: "Carvalho Europeu Milano", pair: true },
           { src: "geral/pisos/espinha-sala-branca.webp", name: "Carvalho Europeu Smoked" },
+          { src: "geral/pisos/sala-bege-coluna.webp", name: "Carvalho Europeu Naturalle", pair: true },
+          { src: "geral/pisos/sala-poltronas-laranja.webp", name: "Carvalho Europeu Naturalle" },
         ],
         decks: [
           { src: "geral/decks/deck-brazil.webp", name: "Cumaru" },
