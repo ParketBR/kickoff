@@ -447,7 +447,7 @@
           { src: "geral/forros/forro-sala-jardim.webp", name: "Louro Pardo" },
         ],
         paineis: [
-          { src: "geral/paineis/ripado-cumaru-mk27.webp", name: "Ripado de Cumaru" },
+          { src: "geral/paineis/ripado-cumaru-mk27.webp", name: "Cumaru" },
         ],
         escadas: [
           { src: "geral/escadas/escada-flutuante-carvalho.webp", name: "Carvalho Europeu Marrone", pair: true },
