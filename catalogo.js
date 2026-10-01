@@ -441,7 +441,7 @@
           { src: "geral/forros/casa-larissa-gomes-02.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/forros/forro-beiral.webp", name: "Cabreúva Dourada", focus: '30%', pair: true },
           { src: "geral/forros/forro-pergolado.webp", name: "Cumaru", focus: '30%' },
-          { src: "geral/forros/forro-sala-jantar-estante.webp", name: "Cumaru" },
+          { src: "geral/forros/forro-sala-jantar-estante.webp", name: "Peroba de Demolição" },
           { src: "geral/forros/forro-varanda-tauari.webp", name: "Tauari" },
           { src: "geral/forros/forro-freijo.webp", name: "Freijó" },
           { src: "geral/forros/forro-sala-jardim.webp", name: "Louro Pardo" },
