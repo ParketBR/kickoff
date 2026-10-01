@@ -438,6 +438,7 @@
           { src: "geral/forros/forro-ripado-cumaru.webp", name: "Cumaru", focus: '30%' },
           { src: "geral/forros/forro-freijo.webp", name: "Freijó" },
           { src: "geral/forros/forro-cumaru-02.webp", name: "Cumaru" },
+          { src: "geral/forros/forro-sala-jardim.webp", name: "Cumaru" },
         ],
         paineis: [
           { src: "geral/paineis/painel-ripado-sala.webp", name: "Carvalho Europeu Naturalle" },
