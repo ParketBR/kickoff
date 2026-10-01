@@ -440,7 +440,7 @@
           { src: "geral/forros/forro-cumaru-02.webp", name: "Cumaru" },
         ],
         paineis: [
-          { src: "geral/paineis/painel-ripado-sala.webp", name: "Carvalho Europeu Light Brown" },
+          { src: "geral/paineis/painel-ripado-sala.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/paineis/ripado-cumaru-mk27.webp", name: "Ripado de Cumaru" },
           { src: "geral/paineis/painel-freijo.webp", name: "Freijó" },
           { src: "geral/paineis/painel-carvalho-customizado.webp", name: "Carvalho Europeu Customizado" },
