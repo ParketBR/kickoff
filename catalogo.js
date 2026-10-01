@@ -456,9 +456,9 @@
           { src: "geral/pisos/loja-versalles.webp", name: "Carvalho Europeu Naturalle" },
         ],
         portas: [
-          { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Smoked" },
+          { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Smoked", pair: true },
+          { src: "geral/portas/porta-pivotante-carvalho-nicho.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/portas/porta-pivotante-frisada-cumaru.webp", name: "Cumaru" },
-          { src: "geral/portas/porta-pivotante-carvalho-nicho.webp", name: "Carvalho Europeu Naturalle", fit: 'contain' },
         ],
       };
 
