@@ -448,7 +448,6 @@
         ],
         escadas: [
           { src: "geral/escadas/escada-helicoidal.webp", name: "Carvalho Europeu Naturalle" },
-          { src: "geral/escadas/escada-caracol-carvalho.webp", name: "Carvalho Europeu" },
         ],
         portas: [
           { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Capuccino" },
