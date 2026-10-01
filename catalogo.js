@@ -423,11 +423,13 @@
           { src: "geral/pisos/ambiente-madeira-escura.webp", name: "Carvalho Europeu Capuccino" },
           { src: "geral/pisos/carvalho-naturalle-pkt01.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/pisos/carvalho-capuccino.webp", name: "Carvalho Europeu Capuccino" },
+          { src: "geral/pisos/peroba-demolicao.webp", name: "Peroba de Demolição", pair: true },
+          { src: "geral/pisos/canela-demolicao.webp", name: "Canela de Demolição" },
         ],
         decks: [
           { src: "geral/decks/deck-brazil.webp", name: "Cumaru" },
           { src: "geral/decks/deck-cumaru-mk27.webp", name: "Cumaru" },
-          { src: "geral/decks/deck-fasano-solario.webp", name: "Cumaru · Hotel Fasano Trancoso" },
+          { src: "geral/decks/deck-fasano-solario.webp", name: "Cumaru" },
           { src: "geral/decks/deck-ipe-oxidado.webp", name: "Ipê Oxidado" },
         ],
         forros: [
@@ -438,25 +440,21 @@
           { src: "geral/forros/forro-ripado-cumaru.webp", name: "Cumaru", focus: '30%' },
           { src: "geral/forros/forro-freijo.webp", name: "Freijó" },
           { src: "geral/forros/forro-cumaru-02.webp", name: "Cumaru" },
+          { src: "geral/forros/forro-sala-jardim.webp", name: "Cumaru" },
         ],
         paineis: [
-          { src: "geral/paineis/painel-ripado-sala.webp", name: "Carvalho Europeu Light Brown" },
+          { src: "geral/paineis/painel-ripado-sala.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/paineis/ripado-cumaru-mk27.webp", name: "Ripado de Cumaru" },
-          { src: "geral/paineis/painel-ripado-cumaru-01.webp", name: "Cumaru" },
           { src: "geral/paineis/painel-freijo.webp", name: "Freijó" },
-          { src: "geral/paineis/painel-carvalho-customizado.webp", name: "Carvalho Europeu Customizado" },
+          { src: "geral/paineis/painel-carvalho-customizado.webp", name: "Carvalho Europeu Marrone" },
           { src: "geral/paineis/painel-shou-sugi-ban-freijo.webp", name: "Shou Sugi Ban + Freijó" },
         ],
         escadas: [
-          { src: "geral/escadas/escada-helicoidal.webp", name: "Escada Helicoidal Laminada em Tauari" },
-          { src: "geral/escadas/escada-caracol-carvalho.webp", name: "Carvalho Europeu" },
+          { src: "geral/escadas/escada-helicoidal.webp", name: "Carvalho Europeu Naturalle" },
         ],
         portas: [
-          { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Capuccino" },
-          { src: "geral/portas/porta-pivotante-frisada-cumaru.webp", name: "Porta Pivotante Frisada em Cumaru Maciço" },
-          { src: "geral/portas/porta-muxarabi-cumaru.webp", name: "Muxarabi de Cumaru Premium" },
-          { src: "geral/portas/porta-carvalho-triplas.webp", name: "Carvalho Europeu", pair: true },
-          { src: "geral/portas/porta-freijo-pivotante.webp", name: "Freijó" },
+          { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Smoked" },
+          { src: "geral/portas/porta-pivotante-frisada-cumaru.webp", name: "Cumaru" },
         ],
       };
 
@@ -915,7 +913,10 @@
       function buildSimpleProduct(product) {
         // Product cover + photo stream (no nested collections)
         const wrap = document.createElement('div');
-        wrap.appendChild(buildProductCover(product));
+        // No catálogo geral a capa da categoria não existe: o stream começa direto
+        // e o id fica no wrapper para o índice lateral e as âncoras do rodapé.
+        if (SINGLE_CATEGORY) wrap.appendChild(buildProductCover(product));
+        else wrap.id = `produto-${product.key}`;
 
         const stream = document.createElement('div');
         stream.className = 'photo-stream';
@@ -932,7 +933,7 @@
 
       // ─── BUILD PRODUCTS NAV ──────────────────────────────────────
       const productsNav = document.getElementById('products-nav');
-      PRODUCTS.forEach((p, i) => {
+      if (productsNav) PRODUCTS.forEach((p, i) => {
         const a = document.createElement('a');
         a.className = 'index-link';
         a.href = `#produto-${p.key}`;
