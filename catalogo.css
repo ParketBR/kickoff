@@ -599,6 +599,10 @@
       .photo-stream-item { height: 55vh; }
       .photo-stream-caption { bottom: 1.5rem; left: 7vw; font-size: var(--text-caption); letter-spacing: 0.26em; }
       .photo-stream-duo .photo-stream-caption { left: 1rem; letter-spacing: 0.14em; }
+      /* Catálogo geral: a dupla empilha no celular, cada foto com a altura de uma tela. */
+      html:not(.single-category) .photo-stream-duo { flex-direction: column; height: auto; }
+      html:not(.single-category) .photo-duo-cell { flex: none; height: 55vh; }
+      html:not(.single-category) .photo-stream-duo .photo-stream-caption { left: 7vw; letter-spacing: 0.26em; }
     }
 
     /* ── Video section ── */

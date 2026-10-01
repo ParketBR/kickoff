@@ -423,6 +423,8 @@
           { src: "geral/pisos/ambiente-madeira-escura.webp", name: "Carvalho Europeu Capuccino" },
           { src: "geral/pisos/carvalho-naturalle-pkt01.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/pisos/carvalho-capuccino.webp", name: "Carvalho Europeu Capuccino" },
+          { src: "geral/pisos/peroba-demolicao.webp", name: "Peroba de Demolição", pair: true },
+          { src: "geral/pisos/canela-demolicao.webp", name: "Canela de Demolição" },
         ],
         decks: [
           { src: "geral/decks/deck-brazil.webp", name: "Cumaru" },
