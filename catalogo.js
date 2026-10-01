@@ -441,7 +441,6 @@
           { src: "geral/forros/forro-pergolado.webp", name: "Cumaru", focus: '30%' },
           { src: "geral/forros/forro-varanda-tauari.webp", name: "Tauari" },
           { src: "geral/forros/forro-freijo.webp", name: "Freijó" },
-          { src: "geral/forros/forro-cumaru-02.webp", name: "Cumaru" },
           { src: "geral/forros/forro-sala-jardim.webp", name: "Cumaru" },
         ],
         paineis: [
