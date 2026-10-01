@@ -12,7 +12,14 @@
      sem trecho preso nem faixa branca antes do Sobre */
   height: 150vh;
   position: relative;
-  background: var(--preto);
+  /* paleta quente da capa: fundo castanho profundo, texto marfim, acento cobre */
+  --hero-bg: #171210;
+  --hero-ink: #f4efe7;
+  --hero-ink-72: rgba(244, 239, 231, .72);
+  --hero-ink-55: rgba(244, 239, 231, .55);
+  --hero-line: rgba(244, 239, 231, .14);
+  --hero-accent: #c9915f;
+  background: var(--hero-bg);
 }
 
 #hero-viewport.hero-split #hero-sticky {
@@ -78,9 +85,12 @@
   flex-direction: column;
   justify-content: center;
   gap: 1.75rem;
-  padding: 0 4vw 0 clamp(1.5rem, 6vw, 6rem);
+  box-sizing: border-box;
+  padding: 0 5vw 0 clamp(1.5rem, 6vw, 6rem);
   text-align: left;
   pointer-events: none;
+  background: var(--hero-bg);
+  color: var(--hero-ink);
   opacity: var(--hp);
   transform: translateY(calc((1 - var(--hp)) * 48px));
 }
@@ -88,9 +98,9 @@
 #hero-sticky .hero-eyebrow {
   font-size: var(--text-caption);
   font-weight: 400;
-  letter-spacing: .5em;
+  letter-spacing: .32em;
   text-transform: uppercase;
-  color: var(--branco-55);
+  color: var(--hero-accent);
 }
 
 #hero-sticky .hero-title {
@@ -98,34 +108,71 @@
   font-family: var(--font-display);
   font-weight: 300;
   letter-spacing: -.03em;
-  line-height: 1.05;
-  font-size: clamp(2.4rem, 5.6vw, 5rem);
-  color: var(--branco);
+  line-height: 1.12;
+  font-size: clamp(1.9rem, 3.1vw, 3.1rem);
+  max-width: 100%;
+  color: var(--hero-ink);
 }
 
 #hero-sticky .hero-title .accent {
-  color: var(--madeira);
-  text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 0;
+  color: var(--hero-accent);
+  font-weight: 400;
 }
 
 /* Linha de apoio sob o título: o que o catálogo reúne */
 #hero-sticky .hero-desc {
   margin: 0;
-  max-width: 38ch;
+  max-width: 48ch;
   font-weight: 300;
-  font-size: clamp(.95rem, 1.1vw, 1.1rem);
+  font-size: clamp(1rem, 1.15vw, 1.15rem);
   line-height: 1.65;
-  color: rgba(255, 255, 255, .68);
+  color: var(--hero-ink-72);
 }
 
 /* Filete fino separando eyebrow e título */
 #hero-sticky .hero-rule {
   width: 3rem;
   height: 1px;
-  background: var(--madeira);
-  opacity: .9;
+  background: var(--hero-accent);
+}
+
+/* Linha de dados objetivos: três fatos, separados por filetes */
+#hero-sticky .hero-facts {
+  list-style: none;
+  margin: .75rem 0 0;
+  padding: 1.5rem 0 0;
+  border-top: 1px solid var(--hero-line);
+  display: flex;
+  gap: clamp(1.5rem, 3vw, 3rem);
+  max-width: 48ch;
+}
+
+#hero-sticky .hero-facts li {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  padding-right: clamp(1.5rem, 3vw, 3rem);
+  border-right: 1px solid var(--hero-line);
+}
+
+#hero-sticky .hero-facts li:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+#hero-sticky .hero-facts strong {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.05rem, 1.3vw, 1.3rem);
+  letter-spacing: -.01em;
+  color: var(--hero-ink);
+}
+
+#hero-sticky .hero-facts span {
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--hero-ink-55);
 }
 
 /* Dica de scroll — seta animada para baixo; some conforme a transição avança */
@@ -191,7 +238,7 @@
     left: 0;
     right: 0;
     top: 0;
-    bottom: calc(var(--hp) * 46vh);
+    bottom: calc(var(--hp) * 56vh);
     filter: brightness(calc(0.5 + var(--hp) * 0.18));
   }
 
@@ -199,24 +246,38 @@
     width: 100%;
     top: auto;
     bottom: 0;
-    height: 46vh;
+    height: 56vh;
     justify-content: flex-end;
-    padding: 0 1.5rem 2.5rem;
-    gap: 1.25rem;
+    padding: 0 1.5rem 2rem;
+    gap: 1rem;
   }
 
   #hero-sticky .hero-title {
-    font-size: clamp(2.2rem, 9vw, 3.25rem);
+    font-size: clamp(1.7rem, 7vw, 2.4rem);
+    max-width: none;
   }
 
   #hero-sticky .hero-desc { font-size: .95rem; max-width: none; }
+
+  #hero-sticky .hero-eyebrow { letter-spacing: .2em; font-size: 12px; }
+
+  #hero-sticky .hero-facts {
+    max-width: none;
+    gap: 1rem;
+    padding-top: 1.1rem;
+    margin-top: .25rem;
+  }
+
+  #hero-sticky .hero-facts li { padding-right: 1rem; }
+  #hero-sticky .hero-facts strong { font-size: 1rem; }
+  #hero-sticky .hero-facts span { font-size: 10px; }
 
   /* wordmark acompanha a imagem que recua para o topo */
   #hero-sticky .hero-wordmark {
     left: 0;
     right: 0;
     top: 0;
-    bottom: calc(var(--hp) * 46vh);
+    bottom: calc(var(--hp) * 56vh);
     font-size: clamp(1.5rem, 10vw, 3rem);
   }
 }
