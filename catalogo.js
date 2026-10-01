@@ -442,7 +442,7 @@
           { src: "geral/forros/forro-pergolado.webp", name: "Cumaru", focus: '30%' },
           { src: "geral/forros/forro-varanda-tauari.webp", name: "Tauari" },
           { src: "geral/forros/forro-freijo.webp", name: "Freijó" },
-          { src: "geral/forros/forro-sala-jardim.webp", name: "Cumaru" },
+          { src: "geral/forros/forro-sala-jardim.webp", name: "Louro Pardo" },
           { src: "geral/forros/forro-sala-jantar-estante.webp", name: "Cumaru", pair: true },
           { src: "geral/escadas/escada-caracol-carvalho-revestida.webp", name: "Carvalho Europeu Naturalle" },
         ],
