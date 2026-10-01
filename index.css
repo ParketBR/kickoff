@@ -207,12 +207,10 @@
 /* Introdução — dois parágrafos lado a lado, como um bloco coeso que
    preenche a largura (sem cap, sem vazio no meio). */
 #sobre .sobre-intro {
-  /* coluna única, alinhada à esquerda com o título, largura de leitura */
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
-  max-width: 62ch;
-  text-align: left;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2.5rem, 5vw, 5rem);
+  max-width: none;
 }
 
 #sobre .corpo-text {
