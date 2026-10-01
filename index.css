@@ -5,23 +5,12 @@
    2. #tech-scroll — 02 Tecnologia (camadas 3D dirigidas por scroll)
    ═══════════════════════════════════════════════════════════════ */
 
-/* ═══ HERO SPLIT — imagem full-bleed que desliza para o lado, título sobe ═══
-   Dirigido pelo scroll via --hp (0 → 1) setado no #hero-sticky (index.js). */
+/* ═══ HERO — foto em tela cheia com o wordmark; sem bloco de texto ═══
+   Sem runway (altura = uma tela), --hp fica em 0 e a foto não desliza. */
 #hero-viewport.hero-split {
-  /* runway curto: a transição termina e o bloco solta logo em seguida,
-     sem trecho preso nem faixa branca antes do Sobre */
-  height: 150vh;
+  height: 100svh;
   position: relative;
-  /* paleta do painel: fundo marfim quente, texto grafite, etiqueta dourada,
-     cards brancos com borda fina */
-  --hero-bg: #f4f2ed;
-  --hero-ink: #1d1c1a;
-  --hero-ink-72: #5f5c56;
-  --hero-ink-55: #8a877f;
-  --hero-line: #e3dfd6;
-  --hero-accent: #b9955a;
-  --hero-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
-  background: var(--hero-bg);
+  background: var(--preto);
 }
 
 #hero-viewport.hero-split #hero-sticky {
@@ -73,63 +62,6 @@
   color: var(--branco);
   text-shadow: 0 6px 50px rgba(0, 0, 0, .5);
   will-change: left, right;
-}
-
-/* Cópia: ocupa a metade esquerda; sobe e revela conforme a imagem sai do caminho */
-#hero-sticky .hero-copy {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.25rem;
-  box-sizing: border-box;
-  padding: 0 5vw 0 clamp(1.5rem, 6vw, 6rem);
-  text-align: left;
-  pointer-events: none;
-  background: var(--hero-bg);
-  color: var(--hero-ink);
-  opacity: var(--hp);
-  transform: translateY(calc((1 - var(--hp)) * 48px));
-}
-
-#hero-sticky .hero-eyebrow {
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-  color: var(--hero-accent);
-}
-
-#hero-sticky .hero-title {
-  margin: 0;
-  font-family: var(--hero-serif);
-  font-variation-settings: 'opsz' 96;
-  font-weight: 400;
-  letter-spacing: -.015em;
-  line-height: 1.1;
-  font-size: clamp(2.1rem, 3.5vw, 3.5rem);
-  max-width: 100%;
-  color: var(--hero-ink);
-}
-
-/* Linha de apoio sob o título: o que o catálogo reúne */
-#hero-sticky .hero-desc {
-  margin: 0;
-  font-weight: 400;
-  font-size: clamp(1rem, 1.2vw, 1.2rem);
-  line-height: 1.55;
-  color: var(--hero-ink-72);
-}
-
-/* Logo da barra superior some enquanto a capa está aberta: ele cairia exatamente
-   sobre a divisão painel claro / foto, e o wordmark grande já assina a capa. */
-html.hero-light .topbar-logo {
-  opacity: 0;
 }
 
 /* Dica de scroll — seta animada para baixo; some conforme a transição avança */
@@ -195,44 +127,22 @@ html.hero-light .topbar-logo {
     left: 0;
     right: 0;
     top: 0;
-    bottom: calc(var(--hp) * 44vh);
-    filter: brightness(calc(0.5 + var(--hp) * 0.18));
-  }
-
-  #hero-sticky .hero-copy {
-    width: 100%;
-    top: auto;
     bottom: 0;
-    height: 44vh;
-    justify-content: flex-end;
-    padding: 0 1.5rem 2rem;
-    gap: .9rem;
+    filter: brightness(0.5);
   }
 
-  #hero-sticky .hero-title {
-    font-size: clamp(1.9rem, 8vw, 2.6rem);
-    max-width: none;
-  }
-
-  #hero-sticky .hero-desc { font-size: .95rem; max-width: none; }
-
-  #hero-sticky .hero-eyebrow { letter-spacing: .18em; font-size: 12px; }
-
-
-  /* wordmark acompanha a imagem que recua para o topo */
   #hero-sticky .hero-wordmark {
     left: 0;
     right: 0;
     top: 0;
-    bottom: calc(var(--hp) * 44vh);
+    bottom: 0;
     font-size: clamp(1.5rem, 10vw, 3rem);
   }
 }
 
 @media (prefers-reduced-motion:reduce) {
 
-  #hero-sticky .hero-media,
-  #hero-sticky .hero-copy {
+  #hero-sticky .hero-media {
     will-change: auto;
   }
 
@@ -290,7 +200,7 @@ html.hero-light .topbar-logo {
 #sobre .accent {
   font-weight: 300;
   text-transform: uppercase;
-  color: var(--accent);
+  color: inherit;
   letter-spacing: 0;
 }
 

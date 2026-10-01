@@ -27,8 +27,6 @@
     /* completa a transição em ~70% do runway e segura só um instante antes de soltar */
     const p = Math.min(scrolled / (runway * 0.7), 1);
     sticky.style.setProperty('--hp', p.toFixed(4));
-    /* painel claro já cobre a metade esquerda: o logo passa a blend "difference" */
-    document.documentElement.classList.toggle('hero-light', p > 0.45 && vp.getBoundingClientRect().bottom > 80);
   }
   const onScroll = () => { if (!ticking){ requestAnimationFrame(update); ticking = true; } };
 
