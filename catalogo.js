@@ -443,6 +443,7 @@
           { src: "geral/forros/forro-varanda-tauari.webp", name: "Tauari" },
           { src: "geral/forros/forro-freijo.webp", name: "Freijó" },
           { src: "geral/forros/forro-sala-jardim.webp", name: "Cumaru" },
+          { src: "geral/forros/forro-sala-jantar-estante.webp", name: "Cumaru" },
         ],
         paineis: [
           { src: "geral/paineis/painel-ripado-sala.webp", name: "Carvalho Europeu Naturalle" },
