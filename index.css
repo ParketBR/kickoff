@@ -19,7 +19,6 @@
   --hero-ink-72: #5f5c56;
   --hero-ink-55: #8a877f;
   --hero-line: #e3dfd6;
-  --hero-card: #ffffff;
   --hero-accent: #b9955a;
   --hero-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
   background: var(--hero-bg);
@@ -112,8 +111,8 @@
   font-variation-settings: 'opsz' 96;
   font-weight: 400;
   letter-spacing: -.015em;
-  line-height: 1.08;
-  font-size: clamp(2.2rem, 3.8vw, 3.8rem);
+  line-height: 1.1;
+  font-size: clamp(2.1rem, 3.5vw, 3.5rem);
   max-width: 100%;
   color: var(--hero-ink);
 }
@@ -125,45 +124,6 @@
   font-size: clamp(1rem, 1.2vw, 1.2rem);
   line-height: 1.55;
   color: var(--hero-ink-72);
-}
-
-/* Três dados em cards, como os indicadores do painel */
-#hero-sticky .hero-facts {
-  list-style: none;
-  margin: .75rem 0 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: .75rem;
-  max-width: 34rem;
-}
-
-#hero-sticky .hero-facts li {
-  display: flex;
-  flex-direction: column;
-  gap: .4rem;
-  padding: 1rem 1.1rem 1.05rem;
-  background: var(--hero-card);
-  border: 1px solid var(--hero-line);
-  border-radius: 6px;
-}
-
-#hero-sticky .hero-facts span {
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--hero-ink-55);
-}
-
-#hero-sticky .hero-facts strong {
-  font-family: var(--hero-serif);
-  font-variation-settings: 'opsz' 48;
-  font-weight: 500;
-  font-size: clamp(1.4rem, 1.8vw, 1.8rem);
-  line-height: 1;
-  letter-spacing: -.01em;
-  color: var(--hero-ink);
 }
 
 /* Logo da barra superior some enquanto a capa está aberta: ele cairia exatamente
@@ -235,7 +195,7 @@ html.hero-light .topbar-logo {
     left: 0;
     right: 0;
     top: 0;
-    bottom: calc(var(--hp) * 50vh);
+    bottom: calc(var(--hp) * 44vh);
     filter: brightness(calc(0.5 + var(--hp) * 0.18));
   }
 
@@ -243,9 +203,9 @@ html.hero-light .topbar-logo {
     width: 100%;
     top: auto;
     bottom: 0;
-    height: 50vh;
+    height: 44vh;
     justify-content: flex-end;
-    padding: 0 1.5rem 1.75rem;
+    padding: 0 1.5rem 2rem;
     gap: .9rem;
   }
 
@@ -258,22 +218,13 @@ html.hero-light .topbar-logo {
 
   #hero-sticky .hero-eyebrow { letter-spacing: .18em; font-size: 12px; }
 
-  #hero-sticky .hero-facts {
-    max-width: none;
-    gap: .5rem;
-    margin-top: .25rem;
-  }
-
-  #hero-sticky .hero-facts li { padding: .75rem .8rem; }
-  #hero-sticky .hero-facts strong { font-size: 1.2rem; }
-  #hero-sticky .hero-facts span { font-size: 10px; }
 
   /* wordmark acompanha a imagem que recua para o topo */
   #hero-sticky .hero-wordmark {
     left: 0;
     right: 0;
     top: 0;
-    bottom: calc(var(--hp) * 50vh);
+    bottom: calc(var(--hp) * 44vh);
     font-size: clamp(1.5rem, 10vw, 3rem);
   }
 }
