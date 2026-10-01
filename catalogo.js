@@ -452,8 +452,6 @@
         portas: [
           { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Smoked" },
           { src: "geral/portas/porta-pivotante-frisada-cumaru.webp", name: "Cumaru" },
-          { src: "geral/portas/porta-carvalho-triplas.webp", name: "Carvalho Europeu", pair: true },
-          { src: "geral/portas/porta-freijo-pivotante.webp", name: "Freijó" },
         ],
       };
 
