@@ -425,7 +425,7 @@
           { src: "geral/pisos/galeria-tabuas-largas.webp", name: "Carvalho Europeu Naturalle", pair: true },
           { src: "geral/pisos/loja-versalles.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/pisos/ambiente-madeira-escura.webp", name: "Carvalho Europeu Capuccino" },
-          { src: "geral/pisos/cozinha-carvalho-marrone.webp", name: "Carvalho Europeu Marrone" },
+          { src: "geral/pisos/cozinha-carvalho-marrone.webp", name: "Canela de Demolição Clareada" },
           { src: "geral/pisos/chevron-sala-jantar.webp", name: "Carvalho Europeu Milano", pair: true },
           { src: "geral/pisos/espinha-sala-branca.webp", name: "Carvalho Europeu Smoked" },
           { src: "geral/pisos/peroba-demolicao.webp", name: "Peroba de Demolição", pair: true },
@@ -438,7 +438,7 @@
           { src: "geral/decks/deck-ipe-oxidado.webp", name: "Itaúba Oxidada" },
         ],
         forros: [
-          { src: "geral/forros/casa-larissa-gomes-02.webp", name: "Carvalho Europeu Naturalle" },
+          { src: "geral/forros/casa-larissa-gomes-02.webp", name: "Carvalho Europeu Smoked" },
           { src: "geral/forros/forro-beiral.webp", name: "Cabreúva Dourada", focus: '30%', pair: true },
           { src: "geral/forros/forro-pergolado.webp", name: "Cumaru", focus: '30%' },
           { src: "geral/forros/forro-sala-jantar-estante.webp", name: "Peroba de Demolição", focus: '18%' },
