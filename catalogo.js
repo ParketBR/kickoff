@@ -449,8 +449,6 @@
         paineis: [
           { src: "geral/paineis/painel-ripado-sala.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/paineis/ripado-cumaru-mk27.webp", name: "Ripado de Cumaru" },
-          { src: "geral/paineis/fachada-ripada.webp", name: "Cumaru" },
-          { src: "geral/paineis/painel-shou-sugi-ban-freijo.webp", name: "Shou Sugi Ban + Freijó" },
         ],
         escadas: [
           { src: "geral/escadas/escada-flutuante-carvalho.webp", name: "Carvalho Europeu", pair: true },
@@ -460,6 +458,8 @@
           { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Smoked", pair: true },
           { src: "geral/portas/porta-pivotante-carvalho-nicho.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/portas/porta-pivotante-frisada-cumaru.webp", name: "Cumaru" },
+          { src: "geral/paineis/fachada-ripada.webp", name: "Cumaru" },
+          { src: "geral/paineis/painel-shou-sugi-ban-freijo.webp", name: "Shou Sugi Ban + Freijó" },
         ],
       };
 
