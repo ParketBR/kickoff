@@ -8,12 +8,11 @@
 /* ═══ HERO SPLIT — imagem full-bleed que desliza para o lado, título sobe ═══
    Dirigido pelo scroll via --hp (0 → 1) setado no #hero-sticky (index.js). */
 #hero-viewport.hero-split {
-  height: 180vh;
-  /* runway de scroll para a transição */
+  /* runway curto: a transição termina e o bloco solta logo em seguida,
+     sem trecho preso nem faixa branca antes do Sobre */
+  height: 150vh;
   position: relative;
-  /* corte seco preto → branco no rodapé, para emendar na seção branca (Sobre) */
   background: var(--preto);
-  background: linear-gradient(180deg, #000 0%, #000 89%, #fff 89%, #fff 100%);
 }
 
 #hero-viewport.hero-split #hero-sticky {
@@ -31,9 +30,11 @@
 /* Mídia: full-bleed em --hp:0 → painel emoldurado à direita em --hp:1 */
 #hero-sticky .hero-media {
   position: absolute;
-  /* top: calc(var(--hp) * 12vh);*/
-  bottom: calc(var(--hp) * 12vh);
-  right: calc(var(--hp) * 5vw);
+  /* full-bleed em --hp:0 → metade direita, altura inteira, em --hp:1.
+     Sem moldura: o estado final é um split limpo que sobe inteiro ao soltar. */
+  top: 0;
+  bottom: 0;
+  right: 0;
   left: calc(var(--hp) * 50%);
   background-size: cover;
   background-position: center;
@@ -48,7 +49,7 @@
   top: 0;
   bottom: 0;
   z-index: 21;
-  right: calc(var(--hp) * 5vw);
+  right: 0;
   left: calc(var(--hp) * 50%);
   display: flex;
   align-items: center;
@@ -107,6 +108,24 @@
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 0;
+}
+
+/* Linha de apoio sob o título: o que o catálogo reúne */
+#hero-sticky .hero-desc {
+  margin: 0;
+  max-width: 38ch;
+  font-weight: 300;
+  font-size: clamp(.95rem, 1.1vw, 1.1rem);
+  line-height: 1.65;
+  color: rgba(255, 255, 255, .68);
+}
+
+/* Filete fino separando eyebrow e título */
+#hero-sticky .hero-rule {
+  width: 3rem;
+  height: 1px;
+  background: var(--madeira);
+  opacity: .9;
 }
 
 /* Dica de scroll — seta animada para baixo; some conforme a transição avança */
@@ -168,11 +187,6 @@
 /* Mobile: divide na vertical — imagem no topo, título sobe por baixo */
 @media (max-width:768px) {
 
-  /* sem o fade branco no mobile: a legenda fica no rodapé e o branco cortaria o texto */
-  #hero-viewport.hero-split {
-    background: var(--preto);
-  }
-
   #hero-sticky .hero-media {
     left: 0;
     right: 0;
@@ -194,6 +208,8 @@
   #hero-sticky .hero-title {
     font-size: clamp(2.2rem, 9vw, 3.25rem);
   }
+
+  #hero-sticky .hero-desc { font-size: .95rem; max-width: none; }
 
   /* wordmark acompanha a imagem que recua para o topo */
   #hero-sticky .hero-wordmark {
