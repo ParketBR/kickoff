@@ -442,7 +442,6 @@
         paineis: [
           { src: "geral/paineis/painel-ripado-sala.webp", name: "Carvalho Europeu Light Brown" },
           { src: "geral/paineis/ripado-cumaru-mk27.webp", name: "Ripado de Cumaru" },
-          { src: "geral/paineis/painel-ripado-cumaru-01.webp", name: "Cumaru" },
           { src: "geral/paineis/painel-freijo.webp", name: "Freijó" },
           { src: "geral/paineis/painel-carvalho-customizado.webp", name: "Carvalho Europeu Customizado" },
           { src: "geral/paineis/painel-shou-sugi-ban-freijo.webp", name: "Shou Sugi Ban + Freijó" },
