@@ -33,7 +33,7 @@
     }
   </script>
   <link rel="stylesheet" href="catalogo.css?v=10">
-  <link rel="stylesheet" href="index.css?v=63">
+  <link rel="stylesheet" href="index.css?v=64">
 </head>
 
 <body class="antialiased selection:bg-white selection:text-black">
@@ -106,38 +106,6 @@
 
   <!-- ─── PRODUCT SECTIONS (injected) ─── -->
   <main id="products" class="relative z-10 bg-black"></main>
-
-  <!-- ─── TEXTURAS · réguas que trocam com o scroll ─── -->
-  <!-- ─── TEXTURAS · régua das 25 espécies ─── -->
-  <section data-screen-label="Texturas" id="texturas" class="texturas-scroll" aria-label="Texturas das espécies">
-    <div class="texturas-stage">
-      <div class="texturas-copy">
-        <span class="texturas-eyebrow">Texturas</span>
-        <h2 class="texturas-nome" id="texturas-nome" aria-live="polite">&nbsp;</h2>
-        <p class="texturas-frase" id="texturas-desc" aria-live="polite">&nbsp;</p>
-        <p class="texturas-contador"><span id="texturas-atual">01</span><span class="texturas-sep">/</span><span
-            id="texturas-total">25</span></p>
-      </div>
-      <div class="texturas-palco">
-        <button class="texturas-seta texturas-seta--prev" type="button" data-dir="-1" aria-label="Textura anterior">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 7 12l8 8" /></svg>
-        </button>
-        <div class="texturas-regua" id="texturas-regua" aria-hidden="true"></div>
-        <button class="texturas-seta texturas-seta--next" type="button" data-dir="1" aria-label="Próxima textura">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8" /></svg>
-        </button>
-        <p class="texturas-dica" aria-hidden="true">
-          <span class="texturas-dica-icone">
-            <svg viewBox="0 0 40 12" aria-hidden="true">
-              <path d="M6 6h28M6 6l4-4M6 6l4 4M34 6l-4-4M34 6l-4 4" />
-            </svg>
-          </span>
-          <span>Deslize para os lados</span>
-        </p>
-      </div>
-      <div class="texturas-trilha" aria-hidden="true"><span id="texturas-trilha-fill"></span></div>
-    </div>
-  </section>
 
   <!-- ─── GUIA TÉCNICO (oculto temporariamente — reativar removendo o atributo hidden) ─── -->
   <section hidden class="relative z-20 bg-black text-white">
@@ -291,7 +259,6 @@
             <h2 class="footer-col-title">Navegue</h2>
             <ul>
               <li><a href="#sobre">Sobre a Parket</a></li>
-              <li><a href="#texturas">Texturas</a></li>
             </ul>
           </div>
 
