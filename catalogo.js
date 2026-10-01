@@ -425,6 +425,8 @@
           { src: "geral/pisos/carvalho-capuccino.webp", name: "Carvalho Europeu Capuccino" },
           { src: "geral/pisos/peroba-demolicao.webp", name: "Peroba de Demolição", pair: true },
           { src: "geral/pisos/canela-demolicao.webp", name: "Canela de Demolição" },
+          { src: "geral/pisos/chevron-sala-jantar.webp", name: "Carvalho Europeu Naturalle", pair: true },
+          { src: "geral/pisos/espinha-sala-branca.webp", name: "Carvalho Europeu Naturalle" },
         ],
         decks: [
           { src: "geral/decks/deck-brazil.webp", name: "Cumaru" },
