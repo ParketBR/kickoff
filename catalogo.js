@@ -451,10 +451,12 @@
           { src: "geral/paineis/painel-freijo.webp", name: "Freijó" },
           { src: "geral/paineis/painel-carvalho-customizado.webp", name: "Carvalho Europeu Marrone" },
           { src: "geral/paineis/painel-shou-sugi-ban-freijo.webp", name: "Shou Sugi Ban + Freijó" },
+          { src: "geral/paineis/fachada-ripada.webp", name: "Cumaru" },
         ],
         escadas: [
           { src: "geral/escadas/escada-flutuante-carvalho.webp", name: "Carvalho Europeu", pair: true },
           { src: "geral/pisos/loja-versalles.webp", name: "Carvalho Europeu Naturalle" },
+          { src: "geral/escadas/escada-caracol-carvalho-revestida.webp", name: "Carvalho Europeu Naturalle" },
         ],
         portas: [
           { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Smoked", pair: true },
