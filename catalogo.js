@@ -423,7 +423,6 @@
           { src: "geral/pisos/sala-poltronas-laranja.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/pisos/ambiente-madeira-escura.webp", name: "Carvalho Europeu Capuccino" },
           { src: "geral/pisos/carvalho-naturalle-pkt01.webp", name: "Carvalho Europeu Naturalle" },
-          { src: "geral/pisos/carvalho-capuccino.webp", name: "Carvalho Europeu Capuccino" },
           { src: "geral/pisos/peroba-demolicao.webp", name: "Peroba de Demolição", pair: true },
           { src: "geral/pisos/canela-demolicao.webp", name: "Canela de Demolição" },
           { src: "geral/pisos/chevron-sala-jantar.webp", name: "Carvalho Europeu Milano", pair: true },
@@ -433,7 +432,7 @@
           { src: "geral/decks/deck-brazil.webp", name: "Cumaru" },
           { src: "geral/decks/deck-cumaru-mk27.webp", name: "Cumaru" },
           { src: "geral/decks/deck-fasano-solario.webp", name: "Cumaru" },
-          { src: "geral/decks/deck-ipe-oxidado.webp", name: "Ipê Oxidado" },
+          { src: "geral/decks/deck-ipe-oxidado.webp", name: "Itaúba Oxidada" },
         ],
         forros: [
           { src: "geral/forros/casa-larissa-gomes-02.webp", name: "Carvalho Europeu Naturalle" },
