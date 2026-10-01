@@ -427,6 +427,9 @@
           { src: "geral/pisos/canela-demolicao.webp", name: "Canela de Demolição" },
           { src: "geral/pisos/chevron-sala-jantar.webp", name: "Carvalho Europeu Milano", pair: true },
           { src: "geral/pisos/espinha-sala-branca.webp", name: "Carvalho Europeu Smoked" },
+          { src: "geral/pisos/galeria-tabuas-largas.webp", name: "Carvalho Europeu Naturalle" },
+          { src: "geral/pisos/loja-versalles.webp", name: "Carvalho Europeu Naturalle" },
+          { src: "geral/pisos/cozinha-carvalho-marrone.webp", name: "Carvalho Europeu Marrone" },
         ],
         decks: [
           { src: "geral/decks/deck-brazil.webp", name: "Cumaru" },
@@ -450,11 +453,12 @@
           { src: "geral/paineis/painel-shou-sugi-ban-freijo.webp", name: "Shou Sugi Ban + Freijó" },
         ],
         escadas: [
-          { src: "geral/escadas/escada-helicoidal.webp", name: "Carvalho Europeu Naturalle" },
+          { src: "geral/escadas/escada-flutuante-carvalho.webp", name: "Carvalho Europeu" },
         ],
         portas: [
           { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Smoked" },
           { src: "geral/portas/porta-pivotante-frisada-cumaru.webp", name: "Cumaru" },
+          { src: "geral/portas/porta-pivotante-carvalho-nicho.webp", name: "Carvalho Europeu Naturalle" },
         ],
       };
 
@@ -469,7 +473,7 @@
         decks: 'geral/decks/deck-cumaru-mk27.webp',
         forros: 'geral/forros/forro-beiral.webp',
         paineis: 'geral/paineis/painel-ripado-sala.webp',
-        escadas: 'geral/escadas/escada-helicoidal.webp',
+        escadas: 'geral/escadas/escada-flutuante-carvalho.webp',
         portas: 'geral/portas/porta-pivotante-madeira.webp',
       };
 
