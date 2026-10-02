@@ -460,7 +460,7 @@
           { src: "geral/portas/porta-pivotante-madeira.webp", name: "Carvalho Europeu Smoked", pair: true },
           { src: "geral/portas/porta-pivotante-carvalho-nicho.webp", name: "Carvalho Europeu Naturalle" },
           { src: "geral/portas/porta-pivotante-frisada-cumaru.webp", name: "Cumaru" },
-          { src: "geral/portas/porta-ripada-entrada-pedra.webp", name: "Cumaru" },
+          { src: "geral/portas/porta-ripada-entrada-pedra.webp", name: "Cumaru", pair: true },
           { src: "geral/portas/portas-pivotantes-sala-jantar.webp", name: "Freijó" },
           { src: "geral/paineis/fachada-ripada.webp", name: "Cumaru" },
           { src: "geral/paineis/painel-shou-sugi-ban-freijo.webp", name: "Shou Sugi Ban + Freijó" },
