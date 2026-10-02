@@ -462,6 +462,8 @@
           { src: "geral/portas/porta-pivotante-frisada-cumaru.webp", name: "Cumaru" },
           { src: "geral/paineis/fachada-ripada.webp", name: "Cumaru" },
           { src: "geral/paineis/painel-shou-sugi-ban-freijo.webp", name: "Shou Sugi Ban + Freijó" },
+          { src: "geral/paineis/fachada-brises-piscina.webp", name: "Ipê", pair: true },
+          { src: "geral/paineis/galeria-forro-ripado-jardim.webp", name: "Ipê" },
         ],
       };
 
