@@ -436,6 +436,8 @@
           { src: "geral/decks/deck-cumaru-mk27.webp", name: "Cumaru" },
           { src: "geral/decks/deck-fasano-solario.webp", name: "Cumaru" },
           { src: "geral/decks/deck-ipe-oxidado.webp", name: "Itaúba Oxidada" },
+          { src: "geral/decks/deck-interno-lareira.webp", name: "Cumaru" },
+          { src: "geral/decks/deck-piscina-por-do-sol.webp", name: "Cumaru" },
         ],
         forros: [
           { src: "geral/forros/casa-larissa-gomes-02.webp", name: "Carvalho Europeu Smoked" },
