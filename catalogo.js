@@ -445,6 +445,7 @@
           { src: "geral/forros/forro-varanda-tauari.webp", name: "Tauari" },
           { src: "geral/forros/forro-freijo.webp", name: "Freijó" },
           { src: "geral/forros/forro-sala-jardim.webp", name: "Loro Pardo" },
+          { src: "geral/forros/forro-ripado-quarto-piscina.webp", name: "Cumaru" },
         ],
         paineis: [
           { src: "geral/paineis/ripado-cumaru-mk27.webp", name: "Cumaru" },
