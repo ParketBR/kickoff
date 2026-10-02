@@ -443,11 +443,11 @@
           { src: "geral/forros/casa-larissa-gomes-02.webp", name: "Carvalho Europeu Smoked" },
           { src: "geral/forros/forro-beiral.webp", name: "Cabreúva Dourada", focus: '30%', pair: true },
           { src: "geral/forros/forro-pergolado.webp", name: "Cumaru", focus: '30%' },
-          { src: "geral/forros/forro-sala-jantar-estante.webp", name: "Peroba de Demolição", focus: '18%' },
+          { src: "geral/forros/forro-sala-jantar-estante.webp", name: "Peroba de Demolição", focus: '18%', pair: true },
+          { src: "geral/forros/forro-ripado-quarto-piscina.webp", name: "Cumaru", focus: '20%' },
           { src: "geral/forros/forro-varanda-tauari.webp", name: "Tauari" },
           { src: "geral/forros/forro-freijo.webp", name: "Freijó" },
           { src: "geral/forros/forro-sala-jardim.webp", name: "Loro Pardo" },
-          { src: "geral/forros/forro-ripado-quarto-piscina.webp", name: "Cumaru" },
         ],
         paineis: [
           { src: "geral/paineis/ripado-cumaru-mk27.webp", name: "Cumaru" },
