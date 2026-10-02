@@ -221,6 +221,17 @@
   margin: 0;
 }
 
+/* "Por que escolher": pequeno título acima do segundo parágrafo */
+#sobre .sobre-porque-title {
+  margin: 0 0 .9rem;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.05rem, 1.3vw, 1.25rem);
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  color: var(--t-95);
+}
+
 /* Pilares — três cartões, borda superior em accent (eco dos cartões abaixo) */
 #sobre .sobre-pilares {
   display: grid;
